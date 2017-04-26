@@ -1,16 +1,25 @@
 
 {% include 'material/includes/material_css.html' %}
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 {% include 'material/includes/material_js.html' %}
 
 <nav>
 	<div class="nav-wrapper pink">
-		<a href="#" class="brand-logo">Logo</a>
+        <a href="#" class="brand-logo"><i class="large material-icons">web</i></a>
+		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
-		<ul id="nav-mobile" class="right hide-on-med-and-down">
+		<ul class="right hide-on-med-and-down">
 			<li><a href="#">Sports</a></li>
             <li><a href="#">Finance</a></li>
             <li><a href="#">General</a></li>
             <li><a href="#">HackerNews</a></li>
+		</ul>
+
+		<ul class="side-nav" id="mobile-demo" >
+            <li><a href="#"><span class="pink-text">Sports</span></a></li>
+            <li><a href="#"><span class="pink-text">Finance</span></a></li>
+            <li><a href="#"><span class="pink-text">General</span></a></li>
+            <li><a href="#"><span class="pink-text">HackerNews</span></a></li>
 		</ul>
 
 	</div>
@@ -22,3 +31,41 @@
 
 {% block content %}
 {% endblock content %}
+
+<footer class="page-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col l6 s12">
+				<h5 class="white-text">Credits</h5>
+				<p class="grey-text text-lighten-4 text-flow">
+					News API is a simple and easy-to-use API that returns JSON metadata for the headlines currently published on a range of news sources and blogs (70 and counting so far).
+				</p>
+				<p class="grey-text text-lighten-4 text-flow">
+					Journal graphic by <a href="http://www.flaticon.com/authors/freepik">Freepik</a> from <a href="http://www.flaticon.com/">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Made with <a href="http://logomakr.com" title="Logo Maker">Logo Maker</a>
+				</p>
+			</div>
+			<div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">www.newsapi.org</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Material Design</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">https://logomakr.com/</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+			</div>
+		</div>
+    </div>
+
+    <div class="footer-copyright">
+    	<div class="container">
+			© 2017 Copyright
+			<a class="grey-text text-lighten-4 right" href="#">More Links</a>
+		</div>
+    </div>
+
+</footer>
+
+
+<script>
+    $(".button-collapse").sideNav();
+</script>
