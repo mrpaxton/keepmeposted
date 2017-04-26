@@ -131,3 +131,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIR = (
+    "news/static/news",
+)
+
+

@@ -5,7 +5,12 @@
 
 <nav>
 	<div class="nav-wrapper pink">
-        <a href="#" class="brand-logo"><i class="large material-icons">web</i></a>
+        <a href="#" class="brand-logo" >
+            {% load static %}
+            <img src="{% static "news/kmp-logo.png" %}" 
+                style="height:40px;width:40px;margin:10px;padding:10px auto;"
+                alt="Keep Me Posted Logo"/>
+        </a>
 		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
 		<ul class="right hide-on-med-and-down">
@@ -25,7 +30,7 @@
 	</div>
 </nav>
 
-<h1>Keep Me Posted</h1>
+<h3>What's up today?</h3>
 
 
 
