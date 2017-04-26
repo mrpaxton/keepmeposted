@@ -2,28 +2,37 @@
 
 {% block content %}
 
-<h3>Sport News Today</h3>
+<div class="container">
 
-{% for obj in object_list %}
+    <div class="col s12 m7 l10 offset-l1">
 
-    <div class="row">
-        <div class="col s12 m7">
-          <div class="card">
+        <h4>Sport News Today</h4>
+
+        {% for obj in object_list %}
+
+          <div class="card hoverable">
             <div class="card-image">
               <img src="{{obj.url_to_image}}">
             </div>
             <div class="card-content">
+              <blockquote>
               <span class="card-title">{{ obj.title }}</span>
-			  <p>{{ obj.description }}</p>
+              </blockquote>
+			  <p class="flow-text small">{{ obj.description }}</p>
             </div>
-            <div class="card-action">
+            <div class="card-action center-align">
 	            <a href={{obj.url}} 
 					class="waves-effect waves-light btn pink">READ</a>
             </div>
           </div>
-        </div>
-      </div>
+          
+          <div class="divider"></div>
 
-{% endfor %}
+        {% endfor %}
+
+    </div>
+
+</div>
+
 
 {% endblock content %}
