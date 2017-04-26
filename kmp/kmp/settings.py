@@ -31,12 +31,23 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+
+    #3rd party
+    'material',
+    'material.frontend',
+    'material.admin',
+
+    #django
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+
+    #custom apps
+    'news',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -55,7 +66,7 @@ ROOT_URLCONF = 'kmp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
