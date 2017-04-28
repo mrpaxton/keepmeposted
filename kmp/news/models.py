@@ -2,7 +2,35 @@ from django.db import models
 
 # Create your models here.
 
+class Category(models.Model):
+
+    FINANCE = "FINANCE"
+    GENERAL = "GENERAL"
+    SPORTS = "SPORTS"
+    TECH = "TECHNOLOGY"
+
+    CATEGORY_CHOICES = (
+        (FINANCE, "Finance"),
+        (GENERAL, "General"),
+        (SPORTS, "Sports"),
+        (TECH, "Technology"),
+    )
+
+    name = models.CharField(
+        max_length = 20,
+        unique = True,
+        choices = CATEGORY_CHOICES,
+        default = GENERAL,
+    )
+
+    def __str__(self):
+        return str(self.name)
+
+
+
 class Article(models.Model):
+
+    categories = models.ManyToManyField(Category)
 
     author = models.CharField( max_length=100, null=True )
     description = models.CharField( max_length=500 )
