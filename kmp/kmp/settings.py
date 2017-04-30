@@ -32,6 +32,9 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
 
+    #django_cron
+    "django_cron",
+
     #3rd party
     'material',
     'material.frontend',
@@ -135,4 +138,6 @@ STATICFILES_DIR = (
     "news/static/news",
 )
 
-
+CRON_CLASSES = [
+    "news.tasks.fetchnews.FetchNewsJob",
+]
