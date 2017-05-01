@@ -1,11 +1,12 @@
 
-
 from django_cron import CronJobBase, Schedule
 from django.conf import settings
 from datetime import datetime
 import requests
 import simplejson
 from news.models import Article, Category
+
+
 
 class FetchNewsJob(CronJobBase):
 
@@ -24,26 +25,36 @@ class FetchNewsJob(CronJobBase):
                     datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + "\n")
             if articles and len(articles) >= 1:
                 for m in articles:
-                    df.write("Model saved: " + str(m) + "\n")
+                    df.write(" :".join(["Model saved", m.source, m]).encode("utf-8") + "\n")
+            df.write("----------------------- \n")
 
 
 # article models by source and cateogry
 def article_models():
-    sources = [ ("espn", "Sports"), ("bloomberg", "Finance"), ("techcrunch", "Technology") ]
+    sources = [
+        ("espn", "Sports"),
+        ("bloomberg", "Finance"),
+        ("techcrunch", "Technology")
+    ]
     articles = []
     for source in sources:
         for article in fetch_articles(source[0]):
             article_model = article_to_model(article, source[0], source[1])
-            articles.append(article_model)
+            if article_model:
+                articles.append(article_model)
     return articles
+
 
 # returns deserialized data
 def fetch_articles(source):
     source_url = "https://newsapi.org/v1/articles?source=" + \
             source + "&apiKey=d5a12ea16437480f95bc839a73fb9f04"
-    print("Fetching from => " + source_url + " ...")
+    print("Fetching from => " + source + " ..")
     response = requests.get(source_url)
     articles = simplejson.loads(response.text).get("articles")
+    #filter only articles whose titles not in database
+    existing_titles = [ a.title for a in Article.objects.all() ]
+    articles = [ a for a in articles if a["title"] not in existing_titles ]
     return articles
 
 
