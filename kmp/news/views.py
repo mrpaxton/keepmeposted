@@ -17,7 +17,7 @@ class SportsArticleListView(ListView):
     def get_queryset(self):
         return Article.objects \
             .filter(categories__name__in=[Category.SPORTS]) \
-            .order_by('title')[:MAX_NEWS]
+            .order_by('-timestamp')[:MAX_NEWS]
 
     def get_context_data(self, **kwargs):
         context = super(SportsArticleListView, self).get_context_data(**kwargs)
@@ -33,7 +33,7 @@ class FinanceArticleListView(ListView):
     def get_queryset(self):
         return Article.objects \
                 .filter(categories__name__in=[Category.FINANCE]) \
-                .order_by('title')[:MAX_NEWS]
+                .order_by('-timestamp')[:MAX_NEWS]
 
     def get_context_data(self, **kwargs):
         context = super(FinanceArticleListView, self).get_context_data(**kwargs)
@@ -49,7 +49,7 @@ class GeneralArticleListView(ListView):
     def get_queryset(self):
         return Article.objects \
                 .filter(categories__name__in=[Category.GENERAL]) \
-                .order_by('title')[:MAX_NEWS]
+                .order_by('-timestamp')[:MAX_NEWS]
 
     def get_context_data(self, **kwargs):
         context = super(GeneralArticleListView, self).get_context_data(**kwargs)
@@ -65,7 +65,7 @@ class TechArticleListView(ListView):
     def get_queryset(self):
         return Article.objects \
                 .filter(categories__name__in=[Category.TECH]) \
-                .order_by('title')[:MAX_NEWS]
+                .order_by('-timestamp')[:MAX_NEWS]
 
     def get_context_data(self, **kwargs):
         context = super(TechArticleListView, self).get_context_data(**kwargs)

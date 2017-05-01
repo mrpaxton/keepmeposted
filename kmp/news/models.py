@@ -1,6 +1,6 @@
+
 from django.db import models
 
-# Create your models here.
 
 class Category(models.Model):
 
@@ -34,7 +34,7 @@ class Article(models.Model):
 
     author = models.CharField( max_length=100, null=True )
     description = models.CharField( max_length=500 )
-    title = models.CharField( max_length=250 )
+    title = models.CharField( max_length=250, unique=True )
     url = models.CharField(max_length=200)
     url_to_image = models.CharField(max_length=200)
     source = models.CharField(max_length=100)
