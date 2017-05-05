@@ -23,10 +23,27 @@
             <div class="card-action center-align">
 	            <a href={{obj.url}} 
 					class="waves-effect waves-light btn pink">READ</a>
+
+
+                  {% if "Surface Laptop" in obj.title %}
+                      <div class="carousel carousel-slider center" data-indicators="true">
+                          <a class="carousel-item" href="#one!"><img src="https://tctechcrunch2011.files.wordpress.com/2017/05/p1011345.jpg?w=80&amp;h=60&amp;crop=1"></a>
+                          <a class="carousel-item" href="#two!"><img src="https://tctechcrunch2011.files.wordpress.com/2017/05/p1011352.jpg?w=80&amp;h=60&amp;crop=1"></a>
+                          <a class="carousel-item" href="#three!"><img src="https://tctechcrunch2011.files.wordpress.com/2017/05/p1011330.jpg?w=80&amp;h=60&amp;crop=1"></a>
+                          <a class="carousel-item" href="#four!"><img src="https://tctechcrunch2011.files.wordpress.com/2017/05/p1011322.jpg?w=80&amp;h=60&amp;crop=1"></a>
+                          <a class="carousel-item" href="#five!"><img src="https://tctechcrunch2011.files.wordpress.com/2017/05/p1011341.jpg?w=80&amp;h=60&amp;crop=1"></a>
+                      </div>
+                  {% endif %}
+
+
             </div>
           </div>
 
+
+
         {% endfor %}
+
+        
 
     </div>
 

@@ -48,3 +48,198 @@ Fetched at 05/01/2017, 20:36:20
 ----------------------- 
 Fetched at 05/01/2017, 20:36:58
 ----------------------- 
+Fetched at 05/01/2017, 22:00:02
+Fetched at 05/01/2017, 22:30:02
+Fetched at 05/01/2017, 23:30:03
+Fetched at 05/01/2017, 23:38:03
+----------------------- 
+Fetched at 05/02/2017, 00:21:19
+Fetched at 05/02/2017, 00:22:15
+----------------------- 
+Fetched at 05/02/2017, 01:00:02
+Fetched at 05/02/2017, 01:30:02
+----------------------- 
+Fetched at 05/02/2017, 01:54:27
+Fetched at 05/02/2017, 02:00:03
+----------------------- 
+Fetched at 05/02/2017, 04:30:02
+Fetched at 05/02/2017, 05:00:02
+Fetched at 05/02/2017, 05:30:02
+Fetched at 05/02/2017, 06:00:03
+Fetched at 05/02/2017, 06:30:03
+Fetched at 05/02/2017, 07:00:04
+----------------------- 
+Fetched at 05/02/2017, 08:00:03
+Fetched at 05/02/2017, 08:30:02
+----------------------- 
+Fetched at 05/02/2017, 08:31:42
+----------------------- 
+Fetched at 05/02/2017, 08:35:36
+----------------------- 
+Fetched at 05/02/2017, 08:37:02
+----------------------- 
+Fetched at 05/02/2017, 20:36:02
+Model saved: espn: Time for Red Sox to step up after 'inexcusable' night at Fenway
+Model saved: espn: Olney: MLB must declare war on racist language at ballparks
+Model saved: espn: From a win-win Sox swap to a bust in the bullpen: Re-grading MLB offseason moves
+Model saved: espn: Real Madrid vs. Atletico Madrid - Football Match Summary - May 2, 2017 - ESPN
+Model saved: espn: Champions League tactical battles: What each team needs to advance
+Model saved: espn: Joe Mixon's second chance starts now
+Model saved: espn: Kiper's early-impact rookies from Round 1
+Model saved: espn: McShay's favorite 2017 NFL draft classes
+Model saved: espn: Only one man can stop Steph Curry. His name is Kevin Durant.
+Model saved: espn: JaVale McGee is a breakout star for Golden State Warriors in NBA playoffs
+Model saved: bloomberg: Trump Tries to Save Face After Taking a Thumping on His First Budget Showdown
+Model saved: bloomberg: U.S. May Consider New Sanctions on Venezuela as Crisis Deepens
+Model saved: bloomberg: Oil Falls as U.S. Crude Supply Glut Seen Shifting to Fuel Tanks
+Model saved: bloomberg: Hampton Creek CEO Fires Top Execs After Fundraising Struggles
+Model saved: bloomberg: Beef Prices Soar After Blizzard Clobbers Midwest
+Model saved: bloomberg: Test of U.S. Defense Against North Korea Missiles Set This Month
+Model saved: bloomberg: Hillary Clinton Blames FBI and Russia for 2016 Loss
+Model saved: bloomberg: Car Thefts Are Surging in Mexico and Police Can't Keep Up
+Model saved: bloomberg: Apple Can’t Ignore Microsoft’s Slick New Laptop
+Model saved: bloomberg: Pay-TV Users Are Bailing Faster Than Ever, Clouding Media Stocks
+Model saved: techcrunch: The $999 Surface Laptop is Microsoft’s expensive answer to Chromebooks
+Model saved: techcrunch: Microsoft’s killer feature for its Chromebook competitor is Office
+Model saved: techcrunch: Windows 10 S laptops will start at $189 and ship this summer
+Model saved: techcrunch: Windows 10 S will fuel Microsoft’s Chromebook competitors
+----------------------- 
+Fetched at 05/02/2017, 21:30:02
+Model saved: espn: 5-on-5: Most important things to watch in Warriors-Jazz
+Model saved: espn: Max effort: Al Horford showing he's worth his salary this postseason
+Model saved: espn: Ronaldo breaks Atletico hearts to put Real Madrid on cusp of UCL final
+Model saved: bloomberg: Apple Sells Fewer iPhones in Last Quarter, Shares Slide
+Model saved: bloomberg: U.S. May Consider New Venezuela Sanctions as Crisis Deepens
+Fetched at 05/02/2017, 22:00:02
+Fetched at 05/02/2017, 22:30:02
+Model saved: bloomberg: Giuliani, Mukasey Seen as 'Disingenuous' by Sanctions Case Judge
+----------------------- 
+Fetched at 05/02/2017, 23:00:02
+Model saved: bloomberg: Trump, Putin Seek to Mend Fences Starting With Syria Cooperation
+Model saved: bloomberg: Jeter, Bush Said to Consider Adding Rothbaum to Marlins Bid
+----------------------- 
+Fetched at 05/02/2017, 23:30:02
+----------------------- 
+Fetched at 05/03/2017, 00:30:02
+Model saved: espn: Wizards vs. Celtics - Game Summary - May 2, 2017 - ESPN
+Model saved: espn: We the Fans
+Fetched at 05/03/2017, 01:00:03
+Model saved: bloomberg: Oil Traders Idled as China Refiner Stars Fall Foul of Smog Fight
+Model saved: bloomberg: Microsoft Presents $999 Laptop in Hardware Push to Rival MacBook
+----------------------- 
+Fetched at 05/03/2017, 02:00:02
+----------------------- 
+Fetched at 05/03/2017, 02:30:09
+Model saved: espn: Rangers shrug off pressure with big Game 3 win
+----------------------- 
+Fetched at 05/03/2017, 05:00:02
+Model saved: espn: Jazz vs. Warriors - Game Summary - May 2, 2017 - ESPN
+Model saved: espn: Malkin needs to step into the void
+Model saved: bloomberg: `Charming Betsy' Doctrine Looms Over Trump's Climate Decision
+----------------------- 
+Fetched at 05/03/2017, 05:30:02
+Model saved: espn: Racial slurs at Fenway prompt much-needed conversation
+Fetched at 05/03/2017, 06:00:02
+Model saved: espn: Isaiah Thomas vs. John Wall the latest Celtics playoff scoring duel
+Model saved: espn: Warriors start fast, easily handle Jazz in Game 1 win
+----------------------- 
+Fetched at 05/03/2017, 07:00:02
+Model saved: espn: Real or not? Red Sox crossed the line in throwing at Manny Machado
+Model saved: bloomberg: These Are the Best-Paying Internships in America
+Model saved: bloomberg: Why Megabanks Fear the Return of Glass-Steagall: QuickTake Q&A
+----------------------- 
+Fetched at 05/03/2017, 07:30:02
+Fetched at 05/03/2017, 08:00:02
+Model saved: espn: Celtics guard Isaiah Thomas never ceases to amaze
+----------------------- 
+Fetched at 05/03/2017, 08:30:03
+Model saved: bloomberg: Trump, Putin Seek to Mend Fences Starting With Syria Crisis
+----------------------- 
+Fetched at 05/03/2017, 09:30:02
+Fetched at 05/03/2017, 16:09:23
+Fetched at 05/03/2017, 16:10:19
+
+----------------------- 
+Fetched at 05/03/2017, 19:30:03
+Model saved: espn: Canelo vs. Chavez: Nothing quite like a showdown between two Mexican boxersModel saved: espn: WatchESPN: Live Sports, Game Replays, Video HighlightsModel saved: espn: The healing in Boston lasted exactly two minutes, eight secondsModel saved: espn: It started with a slide: How the Red Sox-Orioles feud hit a fever pitchModel saved: espn: Derby brings new day for Sano, GunneveraModel saved: bloomberg: Fed Keeps Rates on Hold as Slowdown in Growth Deemed TemporaryModel saved: bloomberg: GOP Health Bill Gains New Life as Key Holdouts Vow SupportModel saved: bloomberg: Trump's Commodities Rally Is Almost GoneModel saved: bloomberg: Tesla's Stock Surge Is a Chance to Clean Up Its Balance SheetModel saved: bloomberg: Sting Lists Condo at NYC's 15 Central Park West for $56 MillionModel saved: bloomberg: Bernanke Questions Strategy and Timing of Trump Tax Cut PlansFetched at 05/03/2017, 19:36:11
+Fetched at 05/03/2017, 19:38:17
+
+----------------------- 
+Fetched at 05/03/2017, 20:30:02
+Model saved: bloomberg: Fed Keeps Rates on Hold as Slowdown in Growth Seen TemporaryModel saved: bloomberg: GOP Flirts Again With Obamacare Repeal But May Still Lack VotesModel saved: bloomberg: French Election 2017: Everything you need to knowModel saved: bloomberg: Waymo-Uber Judge Torn Over Damning Evidence Minus `Smoking Gun'Model saved: bloomberg: Eight Things Youre Doing Wrong When You Go Out for BarbecueModel saved: techcrunch: Waymo case reveals Levandowski got $250 million in Uber stock forOtto
+----------------------- 
+Fetched at 05/03/2017, 23:00:02
+Model saved: bloomberg: House Passes Spending Bill That Omits Most Trump PrioritiesModel saved: bloomberg: GOP Struggles to Find Last Few Votes to Pass Obamacare RepealModel saved: bloomberg: Armored Car Hits Crowd as Venezuela Protests Leave 97 InjuredModel saved: bloomberg: BofA's Moynihan Says Breaking Up Banks Would Hurt U.S. InterestsModel saved: bloomberg: Tesla Assures Model 3 on Time as Musk's Cash Burn ContinuesModel saved: bloomberg: Waymo-Uber Judge Torn Over Damning Evidence Minus 'Smoking Gun'Model saved: bloomberg: Rich Families Go Solo on Deals, Moving Away From Private EquityModel saved: bloomberg: Ross Says TPP Could Form Starting Point for U.S. on Nafta TalksModel saved: bloomberg: Fed Sticks to Gradual Rate-Hike Approach Despite SlowdownModel saved: techcrunch: Facebook beats in Q1 with $8.03B revenue, faster growth to 1.94Busers
+----------------------- 
+Fetched at 05/03/2017, 23:30:03
+Model saved: espn: Raptors vs. Cavaliers - Game Summary - May 3, 2017 - ESPNModel saved: bloomberg: Armored Car Hits Crowd as Venezuela Riots Leave 161 InjuredModel saved: bloomberg: Waymo-Uber Judge Torn Over Strong Evidence Minus Smoking Gun
+----------------------- 
+Fetched at 05/04/2017, 00:30:03
+Model saved: espn: Caps hope to tie up series vs. Crosby-less PenguinsModel saved: bloomberg: GOP Sets Health Bill Vote Thursday Amid Doubts About CountModel saved: techcrunch: FBI director Comey backs new Feinstein push for decryptbillModel saved: techcrunch: PSA: This Google Doc scam is spreading fast and will email everyone youknow
+----------------------- 
+Fetched at 05/04/2017, 01:00:02
+Model saved: bloomberg: Trump Poised to Ease Rules on Religious Groups in PoliticsModel saved: bloomberg: Apple Makes $1 Billion Commitment Toward More U.S. Manufacturing JobsModel saved: bloomberg: Google Warns of Phishing Scam That Impersonates Google Docs
+----------------------- 
+Fetched at 05/04/2017, 01:30:03
+Model saved: espn: LeBron passes Kareem for postseason points
+----------------------- 
+Fetched at 05/04/2017, 02:00:02
+Model saved: espn: Rockets vs. Spurs - Game Summary - May 3, 2017 - ESPNModel saved: techcrunch: Intels new Silicon Valley Autonomous Driving Garage is primed forpartnerships
+----------------------- 
+Fetched at 05/04/2017, 03:00:02
+Model saved: espn: LeBron James, Cavs keep soaring, romp past Raptors in Game 2Model saved: espn: Capitals on the brink of disasterModel saved: espn: NFL rookies who landed with perfect teamsModel saved: bloomberg: Armored Car Hits Crowd as Venezuela Riots Leave 300 InjuredModel saved: bloomberg: Crooks Are After the Grease From Your French Fries
+----------------------- 
+Fetched at 05/04/2017, 07:00:02
+Model saved: espn: Rockets vs. Spurs -  - May 3, 2017 - ESPNModel saved: espn: Inside LeBron James' run of outstanding playoff gamesModel saved: espn: All common sense lost in Red Sox-Orioles dramaModel saved: espn: Forget Rookie of the Year, Aaron Judge is an MVP candidateModel saved: espn: Real or not? Cole Hamels injury could sink Rangers, make Astros hard to catchModel saved: bloomberg: Trump's Nafta Threats Push Mexico to Play Catchup on InnovationModel saved: techcrunch: Veo Robotics gives industrial robots a sixth sense for safely working aroundpeople
+----------------------- 
+Fetched at 05/04/2017, 16:00:02
+Model saved: espn: Source: Spurs' Parker may have torn tendonModel saved: espn: McShay's way-too-early 2018 mock draft: Promising QB class awaitsModel saved: espn: Celtics already found superstar they've been looking for?Model saved: espn: First pitches, 'basketball Bluetooth' and the evolution of Boston's pregame ritualModel saved: espn: Utah Jazzs Joe Johnson still hitting big shots in 16th seasonModel saved: espn: For the same two minutes every game, Yu Darvish is an awful pitcherModel saved: espn: The obscure MLB record Trea Turner was born to breakModel saved: espn: Power, tradition and legacy highlight Canelo-Chavez Jr.Model saved: espn: NFL execs unfiltered on every team's draftModel saved: bloomberg: GOP Sets Do-Or-Die Vote to Deliver on Obamacare Repeal PromiseModel saved: bloomberg: Apple Buys More Company Debt Than World's Biggest Bond FundsModel saved: bloomberg: Why the Retail Crisis Could Be Coming to American GroceriesModel saved: bloomberg: Don't Be Fooled, Mark Zuckerberg Is Killing ItModel saved: bloomberg: China's First Jet to Rival Boeing Is Helped by U.S. TechnologyModel saved: bloomberg: Le Pen Tirade Meets Logic of Macron in Brutal French TV DuelModel saved: bloomberg: At RT, News Breaks YouModel saved: bloomberg: Inside the Scorpion Room Where Drug Price Secrets Are GuardedModel saved: bloomberg: Metals Extend Sell-Off on Mounting China Concerns, Fed OutlookModel saved: bloomberg: Can Wal-Marts Expensive New E-Commerce Operation Compete With Amazon?Model saved: techcrunch: Imagination Technologies starts dispute with Apple over graphicschipsModel saved: techcrunch: Indonesias Uber rival Go-Jek raises $1.2 billion led by Tencent at a $3 billionvaluationModel saved: techcrunch: Elon Musk reveals more details about the Model YcrossoverModel saved: techcrunch: Heres Googles official statement on todays fast-spreading phishingattack
+----------------------- 
+Fetched at 05/04/2017, 16:30:02
+Model saved: bloomberg: Boeing's China Rival Mounts Challenge Using U.S. TechnologyModel saved: bloomberg: National Front Leaders Start to Acknowledge That Le Pen May LoseModel saved: bloomberg: Out on Kansas Prairies, Wheat Traders Get a Look at Storm Damage
+----------------------- 
+Fetched at 05/04/2017, 17:00:02
+Model saved: espn: Spurs' Parker has torn tendon, out for playoffs
+----------------------- 
+Fetched at 05/04/2017, 21:00:02
+Model saved: espn: How much will Tony Parker's injury hurt Spurs versus Rockets?Model saved: espn: JaVale McGee Is No JokeModel saved: espn: Celta Vigo vs. Manchester United - Football Match Summary - May 4, 2017 - ESPNModel saved: espn: Wright Thompson: Graves of past champions explain today's Kentucky Derby contendersModel saved: bloomberg: Senate GOP to Snub House Obamacare Repeal Bill and Write Its OwnModel saved: bloomberg: Track the GOP's Health Plan One Amendment at a TimeModel saved: bloomberg: Oil's OPEC-Driven Gain Wiped Out as Shale Boom Offsets CutsModel saved: bloomberg: Comcast Rejected Funding Days Before Fyre FestivalModel saved: bloomberg: State Farm to Displace 4,200 Workers, Shutter 11 LocationsModel saved: bloomberg: Navy Sub's Overheating Motor First Glitch in $126 Billion SystemModel saved: bloomberg: Fox Radio Reporter Claims She Was Fired 24 Hours After ComplaintModel saved: bloomberg: Warren Buffett's Wish ListModel saved: bloomberg: Joes Crab Shack Owner Said to Prepare Bankruptcy FilingModel saved: bloomberg: Polling Audit Challenges Clintons Claim That Comey Cost Her the ElectionModel saved: techcrunch: This DIY Google Home uses Raspberry Pi and cardboard to make the magichappenModel saved: techcrunch: FCC Commissioner Mignon Clyburn talks privacy, compromise and connectingcommunitiesModel saved: techcrunch: Snapchat launches self-serve admanagerModel saved: techcrunch: Whirlpool acquires Yummly, the recipe search engine last valued at$100M
+----------------------- 
+Fetched at 05/04/2017, 21:30:03
+Model saved: bloomberg: Lewandowski Breaks With Partner Amid Reports of Foreign ClientsModel saved: bloomberg: Good Day for Oil Producers Ruined by a Bad Day for OilModel saved: bloomberg: Comcast Rejected Funding Days Before Doomed Fyre FestivalModel saved: bloomberg: State Farm to Displace 4,200 Workers, Exit 11 LocationsModel saved: bloomberg: Seriously, Beware the Shadow BrokersModel saved: bloomberg: North Korea Sanctions Would Get Tougher Under U.S. House Measure
+----------------------- 
+Fetched at 05/04/2017, 22:30:03
+Model saved: bloomberg: Lewandowski Exits Lobby Firm Amid Reports of Foreign ClientsModel saved: bloomberg: Tillerson Emphatic About Need to Halt South China Sea BuildupModel saved: bloomberg: Washington Is Making It Tougher to RetireModel saved: bloomberg: Shake Shack Tumbles After Cold Weather Hurts Restaurant Traffic
+----------------------- 
+Fetched at 05/04/2017, 23:00:03
+Model saved: techcrunch: Qualcomm could be looking at banning iPhone imports into theU.S.
+----------------------- 
+Fetched at 05/05/2017, 00:00:07
+Model saved: espn: Starting with McDavid, Oilers GM made all the right movesModel saved: bloomberg: With 40 New Original Shows, YouTube Targets TV's BreadbasketModel saved: techcrunch: These big tech companies pay their interns themost
+----------------------- 
+Fetched at 05/05/2017, 01:00:03
+Model saved: espn: Danny Ainge on Isaiah Thomas: 'He's been an inspiration'Model saved: bloomberg: Buffett Sells a Third of Berkshire's IBM Holding, CNBC ReportsModel saved: bloomberg: Amazon CEO Bezos Sells About $1 Billion in Company StockModel saved: bloomberg: J&J Loses $110 Million Verdict Over Talc Cancer-Link Claim
+----------------------- 
+Fetched at 05/05/2017, 01:30:04
+
+----------------------- 
+Fetched at 05/05/2017, 02:30:03
+Model saved: espn: Miguel Montero is finding his comfort zoneModel saved: bloomberg: Buffett Discloses Reduced IBM Stake Ahead of Berkshire MeetingModel saved: bloomberg: Taiwan-born Navy Officer Admits Lying, Mishandling U.S. Secrets
+----------------------- 
+Fetched at 05/05/2017, 04:30:02
+Model saved: espn: Unsung heroes get it done for RangersModel saved: espn: Sabres GM search scouting reportModel saved: espn: Awakening the sleeping tennis giant that is South AfricaModel saved: bloomberg: Oil Extends Slump Below $45 as U.S. Shale Confounds OPEC's CutsModel saved: bloomberg: Fraud, Threats and Ferrari Fights in China Embezzlement SuitModel saved: bloomberg: China's New Plane Will Be Helped Aloft by U.S. TechnologyModel saved: bloomberg: Team Macron vs Team Le PenModel saved: techcrunch: Beatie Wolfe brings her new album Raw Space to life with augmentedreality
+----------------------- 
+Fetched at 05/05/2017, 05:30:02
+Model saved: espn: Manny Machado is the man Red Sox fans love to hateModel saved: bloomberg: Looking for Love Will Cost You More in Zurich Than Anywhere Else
+----------------------- 
+Fetched at 05/05/2017, 06:00:03
+Model saved: espn: Celts' Thomas: Bad blood with Wiz carried overModel saved: espn: Feeling strong, Warriors heed words of wisdom from Steve KerrModel saved: bloomberg: Oil's Plunge Accelerates Below $45 as U.S. Shale Confounds OPEC
+----------------------- 
+Fetched at 05/05/2017, 07:00:02
+Model saved: bloomberg: Bad Week for Oil and Iron Gets Worse, Spurs Some Risk ContagionModel saved: bloomberg: Apple Is Under Attack on All FrontsModel saved: bloomberg: Chinas New Plane Will Be Helped Aloft by U.S. Technology
+----------------------- 
+Fetched at 05/05/2017, 08:00:01
+Model saved: espn: Real or not? Astros' Marwin Gonzalez stays hot; bigger nets needed for fansModel saved: bloomberg: That Isnt How You Drink Tequila. This Is
+----------------------- 
+Fetched at 05/05/2017, 08:17:29
+Model saved: bloomberg: Bad Week for Oil and Iron Ore Gets Worse, Spurring Contagion
+----------------------- 
