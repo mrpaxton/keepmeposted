@@ -108,15 +108,18 @@ def article_to_model(article, source, category):
 
             # TODO: extract key phrases using RAKE algo and save to database
             # 1. gather article text
-            # 2. if text gathered successfully, feed text to Rake
-            # 3. result from Rake is saved to database, need a model
-                # Key Phrase: belongs to Article, text, score
-            r = Rake()
             text = techcrunch_all_text(article.get("url"))
-            r.extract_keywords_from_text(text)
-            ph_scores = r.get_ranked_phrases_with_scores()
-            print(ph_scores)
-            print("===================")
+
+            # 2. if text gathered successfully, feed text to Rake
+            if text and len(text) > 100:
+                r = Rake()
+                r.extract_keywords_from_text(text)
+                ph_scores = r.get_ranked_phrases_with_scores()
+                print(ph_scores)
+                print("===================")
+
+            # 3. result from Rake is saved to database, need a model
+                # KeyPhrase: belongs to Article, text, score
 
         # Save category
         cat_name = category.upper()
@@ -140,9 +143,10 @@ def techcrunch_all_text(url):
 def techcrunch_images(url):
     html_doc = requests.get(url).text
     soup = BeautifulSoup(html_doc, "html.parser")
-    big_images = [ i.get("src") for i in soup.select("div.article-entry img") ]
+    # big_images = [ i.get("src") for i in soup.select("div.article-entry img") ]
     slide_images = [ i.get("data-src") for i in soup.select("div.slideshowify li div.image img") ]
-    return big_images + slide_images
+    # return big_images + slide_images
+    return slide_images
 
 
 # helper to convert link into unslugified text
