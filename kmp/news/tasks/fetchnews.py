@@ -4,22 +4,31 @@ from django.conf import settings
 from datetime import datetime
 import requests
 import simplejson
-from news.models import Article, Category
+from news.models import Article, Category, Photo
+
+
+import urllib.parse
+import tempfile
+from django.core import files
+from bs4 import BeautifulSoup
+
+from rake_nltk import Rake
 
 
 
 class FetchNewsJob(CronJobBase):
 
-    RUN_EVERY_MINS = 30
+    RUN_EVERY_MINS = 120
 
     schedule = Schedule(run_every_mins=RUN_EVERY_MINS)
     code = "news.tasks.fetchnews.FetchNewsJob"
 
     def do(self):
-        datafile = settings.BASE_DIR + "/news/tasks/datafile.txt"
 
         articles = article_models()
 
+        #log the fetch results: should be moving to when saving model
+        datafile = settings.BASE_DIR + "/news/tasks/datafile.txt"
         with open(datafile, 'a') as df:
             df.write("Fetched at " + \
                     datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + "\n")
@@ -40,6 +49,7 @@ def article_models():
     ]
     articles = []
     for source in sources:
+
         for article in fetch_articles(source[0]):
             article_model = article_to_model(article, source[0], source[1])
             if article_model:
@@ -47,14 +57,15 @@ def article_models():
     return articles
 
 
-# returns deserialized data
+# fetch articles from source
+# returns deserialized data, not yet models
 def fetch_articles(source):
     source_url = "https://newsapi.org/v1/articles?source=" + \
             source + "&apiKey=d5a12ea16437480f95bc839a73fb9f04"
     print("Fetching from => " + source + " ..")
     response = requests.get(source_url)
     articles = simplejson.loads(response.text).get("articles")
-    #filter only articles whose titles not in database
+    # filter only articles whose titles not in database
     existing_titles = [ a.title for a in Article.objects.all() ]
     articles = [ a for a in articles if a["title"] not in existing_titles ]
     return articles
@@ -72,13 +83,58 @@ def article_to_model(article, source, category):
             url_to_image=article.get("urlToImage"),
             source=source,
         )
+        # upon creating an article model:
+
+        #TODO: save related images to the database, using Article.photo.image
+        if source == "techcrunch":
+            # if related_images: save_images_to_article_model()
+            image_urls = techcrunch_images(article.get("url"))
+            if image_urls and len(image_urls) >= 1:
+                print("Saving related images => ", image_urls)
+                for image_url in image_urls:
+                    req = requests.get(image_url, stream=True)
+                    if req.status_code == 200:
+                        filename = urllib.parse.unquote(image_url).split('/')[-1].split('?')[0]
+                        tf = tempfile.NamedTemporaryFile()
+                        for block in req.iter_content(1024*8):
+                            if not block:
+                                break
+                            tf.write(block)
+                        photo = Photo()
+                        photo.image.save(filename, files.File(tf))
+                        a.photos.add(photo)
+                        print(filename, " saved successfully.\n")
+
+
+            # TODO: extract key phrases using RAKE algo and save to database
+            # 1. gather article text
+            # 2. if text gathered successfully, feed text to Rake
+            # 3. result from Rake is saved to database, need a model
+                # Key Phrase: belongs to Article, text, score
+            r = Rake()
+            text = techcrunch_all_text(article.get("url"))
+            r.extract_keywords_from_text(text)
+            ph_scores = r.get_ranked_phrases_with_scores()
+            print(ph_scores)
+            print("===================")
+
+        # Save category
         cat_name = category.upper()
         a.categories.add( Category.objects.get(name=cat_name) )
+
         a.save()
+
     except Exception as e:
         print("\t Error creating a model: " + str(e))
     return a
 
+# helper to get all text from Techcrunch url
+def techcrunch_all_text(url):
+    html_doc = requests.get(url).text
+    soup = BeautifulSoup(html_doc, "html.parser")
+    all_p = soup.select("article p")
+    news_text = [ p.text for p in all_p ]
+    return " ".join(news_text)
 
 # helper to extract images from TechCrunch news
 def techcrunch_images(url):
