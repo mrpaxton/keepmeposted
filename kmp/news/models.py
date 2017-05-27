@@ -1,6 +1,15 @@
 
 from django.db import models
 
+import requests
+import urllib.parse
+from django.core import files
+import tempfile
+from rake_nltk import Rake
+from news.tasks.techcrunch_helper import TechcrunchHelper
+from decimal import Decimal
+from django.contrib.humanize.templatetags.humanize import naturaltime
+
 
 class Category(models.Model):
 
@@ -30,10 +39,10 @@ class Category(models.Model):
 
 class Article(models.Model):
 
-    categories = models.ManyToManyField(Category)
+    categories = models.ManyToManyField(Category, blank=True)
 
     # parent = models.ForeignKey("self", blank=True, related_name="children")
-    related_articles = models.ForeignKey("self", null=True, blank=True, related_name="article_related_articles")
+    # related_articles = models.ForeignKey("self", blank=True, null=True, related_name="article_related_articles")
 
     author = models.CharField( max_length=100, null=True )
     description = models.CharField( max_length=500 )
@@ -45,21 +54,84 @@ class Article(models.Model):
     timestamp = models.DateTimeField(auto_now_add=True, null=True)
     active = models.BooleanField(default=True)
 
+    def natural_time(self):
+        return naturaltime(self.timestamp)
+
     def __str__(self):
         return str(self.title)
 
     def __unicode__(self):
         return str(self.title)
 
+    def save(self, *args, **kwargs):
+
+        # create
+        if not self.pk:
+
+            super(Article, self).save(*args, **kwargs)
+            print("==> self.title created: ", self.title[:15])
+
+            if self.source == "techcrunch": #do Techcrunch specific logics
+
+                # 1. save related images to the article model, if any
+                tch = TechcrunchHelper(self.url)
+                image_urls = tch.all_images()
+                if image_urls and len(image_urls) >= 1:
+                    print("  ==> saving related images: ")
+                    # save_image_from_url()
+                    for image_url in image_urls:
+                        req = requests.get(image_url, stream=True)
+                        if req.status_code == 200:
+                            filename = urllib.parse.unquote(image_url).split('/')[-1].split('?')[0]
+                            # skip blank files from TechCrunch ex: 1x1.jpg
+                            if filename.startswith("1x1"):
+                                continue
+
+                            tf = tempfile.NamedTemporaryFile()
+                            for block in req.iter_content(1024*8):
+                                if not block:
+                                    break
+                                tf.write(block)
+
+                            photo = Photo()
+                            photo.image.save(filename, files.File(tf))
+                            self.photos.add(photo)
+                            print("  ==> <", filename, "> image saved successfully.\n")
+
+                # 2. if text gathered successfully, feed text to Rake, save KP model
+                text = tch.all_text()
+                if text and len(text) > 100:
+                    r = Rake()
+                    r.extract_keywords_from_text(text)
+                    ph_scores = r.get_ranked_phrases_with_scores()
+                    # save score, text to Keyphrase model
+                    top_score_tuples = ph_scores[:10]
+                    if top_score_tuples and len(top_score_tuples) == 10:
+                        for t in top_score_tuples: # (52.8878, 'foo bar baz')
+                            kp = Keyphrase()
+                            # need try catch
+                            kp.score = Decimal(t[0])
+                            kp.text = t[1]
+                            print("    phrase: " + kp.text + ", score: " + str(round(kp.score, 2)))
+                            kp.save()
+                            self.keyphrases.add(kp)
+
+                        print("  Keyphrases and scores saved successfully.\n\n")
+
+        # save
+        else:
+            super(Article, self).save(*args, **kwargs)
+            print("==> self.title saved: ", self.title[:15])
+
 
 class Keyphrase(models.Model):
 
-    article = models.ForeignKey(Article, on_delete=models.CASCADE)
-
+    article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name="keyphrases", null=True, blank=True)
     text = models.CharField( max_length=100, unique=True )
+    score = models.DecimalField(max_digits=10, decimal_places=5, default=Decimal("0.00000"))
 
     def __str__(self):
-        return str(self.text)
+        return str(self.text + ": score: " + str(self.score))
 
 
 class Photo(models.Model):
