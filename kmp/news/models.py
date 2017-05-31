@@ -57,6 +57,13 @@ class Article(models.Model):
     def natural_time(self):
         return naturaltime(self.timestamp)
 
+    def extracted_text(self):
+        return ", ".join( kp.text for kp in self.keyphrases.all() )
+
+
+    def photo_urls(self):
+        return [ "/".join(photo.image.name.split("/")[2:]) for photo in self.photos.all() ]
+
     def __str__(self):
         return str(self.title)
 
@@ -69,7 +76,7 @@ class Article(models.Model):
         if not self.pk:
 
             super(Article, self).save(*args, **kwargs)
-            print("==> self.title created: ", self.title[:15])
+            print("==> self.title created: ", self.title[:25])
 
             if self.source == "techcrunch": #do Techcrunch specific logics
 
@@ -138,7 +145,7 @@ class Photo(models.Model):
 
     article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name="photos", null=True, blank=True)
 
-    image = models.ImageField(upload_to="photos/originals/%Y/%m/")
+    image = models.ImageField(upload_to="news/static/news/photos/originals/%Y/%m/")
 
     # title = models.CharField(max_length=100)
     # image_height = models.IntegerField()
