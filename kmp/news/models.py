@@ -125,6 +125,9 @@ class Article(models.Model):
 
                         print("  Keyphrases and scores saved successfully.\n\n")
 
+                    #mentioned_topics
+                    print("===> ", tch.mentioned_topics(tch.related_links()))
+
         # save
         else:
             super(Article, self).save(*args, **kwargs)

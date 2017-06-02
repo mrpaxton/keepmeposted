@@ -10,50 +10,57 @@
 
         {% for obj in object_list %}
 
-          <div class="card hoverable">
-            <div class="card-image">
-              <img src="{{obj.url_to_image}}">
-            </div>
-            <div class="card-content">
-              <blockquote>
-                <span class="card-title">{{ obj.title }}</span>
-              </blockquote>
-			  <p class="flow-text small">{{ obj.description }}</p>
-              <p class="small teal-text right">{{ obj.natural_time }}</p>
-            </div>
-            <div class="card-action center-align">
-	            <a href={{obj.url}} 
-					class="waves-effect waves-light btn pink">READ</a>
-                <br/></br/>
+            <div class="card hoverable">
+
+                <div class="card-image">
+                    <img src="{{obj.url_to_image}}">
+                </div>
+
+                <div class="card-content">
+                    <blockquote>
+                        <span class="card-title">{{ obj.title }}</span>
+                    </blockquote>
+                    <p class="flow-text small">{{ obj.description }}</p>
+                    <p class="small teal-text right">{{ obj.natural_time }}</p>
+                </div>
+
+                <div class="card-action center-align">
+
+                    <a href={{obj.url}} 
+                        class="waves-effect waves-light btn-large pink">READ</a>
+                    <br/></br/>
 
 
-                {% comment %}
-                  Mock for showing images in article and extracted text
-                {% endcomment %}
+                    {% comment %}
+                        Showing images in carousel and extracted key phrases
+                    {% endcomment %}
 
-                {% if "Ex-Apple" in obj.title and obj.source == "techcrunch" %}
-                    <div class="carousel center teal" data-indicators="true">
-                        {% for pu in obj.photo_urls %}
-                            {% load static %}
-                            <a class="carousel-item" href="#one!"><img src={% static pu %} /></a>
-                        {% endfor %}
-                    </div>
+                    {% if obj.source == "techcrunch" %}
 
-                    <div class="card-content teal flow-text small">
-                        <h5>Extracted Phrases Inside This Article</h5>
-                        {{ obj.extracted_text }} 
-                    </div>
+                        {% if obj.photo_urls|length > 1 %}
+                            <div class="carousel slide arrow center cyan darken-1" data-indicators="true">
+                                {% for pu in obj.photo_urls %}
+                                    {% load static %}
+                                    <a class="carousel-item" href="#one!"><img style="width:120%" src={% static pu %} /></a>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
 
-                {% endif %}
+                        {% if obj.extracted_text|length > 0 %}
+                            <div class="card-content cyan darken-1 flow-text small">
+                                <h5 class="gray-text">Inside This Article</h5>
+                                <p class="flow-text small gray-text">{{ obj.extracted_text }}</p>
+                            </div>
+                        {% endif %}
 
-            </div>
+                    {% endif %}
+
+                </div>
           </div>
 
         {% endfor %}
 
     </div>
-
 </div>
-
 
 {% endblock content %}
