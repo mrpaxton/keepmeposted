@@ -5,6 +5,7 @@ import requests
 import urllib.parse
 from django.core import files
 import tempfile
+import re
 from rake_nltk import Rake
 from news.tasks.techcrunch_helper import TechcrunchHelper
 from decimal import Decimal
@@ -57,9 +58,15 @@ class Article(models.Model):
     def natural_time(self):
         return naturaltime(self.timestamp)
 
-    def extracted_text(self):
-        return ", ".join( kp.text for kp in self.keyphrases.all() )
 
+    def __text_without_puncs(self, text):
+        clean_text = re.sub("[^a-zA-Z0-9 \n]", "", text)
+        return clean_text
+
+
+    def extracted_text(self):
+        keyphrases = [ self.__text_without_puncs(kp.text) for kp in self.keyphrases.all() ]
+        return ", ".join(kp for kp in keyphrases)
 
     def photo_urls(self):
         return [ "/".join(photo.image.name.split("/")[2:]) for photo in self.photos.all() ]

@@ -7,7 +7,26 @@ from django.views.generic import ListView
 
 from .models import Article, Category
 
+from rest_framework.views import APIView
+from rest_framework.response import Response
+
+
 MAX_NEWS = 10
+
+
+class MockDataAPIView(APIView):
+    authentication_classes = []
+    permission_classes = []
+
+    def get(self, request, format=None):
+         qs_count = 20 #User.objects.all().count()
+         labels = ["Users long label name really long label name werwer werw sdfsdf werwer", "Blue foo bar baz yo ho la", "Yellow hello there rad cool dope epic", "Green", "Purple", "Orange", "Teal", "Cyan"]
+         default_items = [qs_count, 23, 2, 3, 12, 2, 5, 35]
+         data = {
+                 "labels": labels,
+                 "default": default_items,
+         }
+         return Response(data)
 
 
 class SportsArticleListView(ListView):
