@@ -2997,3 +2997,159 @@ Model saved: bloomberg: Women Close Gender Pay Gap in Two STEM Jobs, Lag in Othe
 Fetched at 06/04/2017, 08:00:02
 Model saved: bloomberg: Denmark Is Killing Tesla (and Other Electric Cars)
 ----------------------- 
+Fetched at 06/04/2017, 10:30:01
+Model saved: espn: Andre Iguodala comments on vandalism, racism and wealth
+----------------------- 
+Fetched at 06/04/2017, 10:30:02
+Model saved: bloomberg: London Terror Attack Before Vote Leaves 7 Dead, Many Hurt
+----------------------- 
+Fetched at 06/04/2017, 10:30:02
+Model saved: bloomberg: U.S. Begins Drive to Oust Islamic State From Raqqa, Turkey Says
+----------------------- 
+Fetched at 06/04/2017, 10:30:02
+Model saved: bloomberg: Bond Traders Enter Fed Blackout Betting a Hike Won't Quash Rally
+----------------------- 
+Fetched at 06/04/2017, 12:30:02
+Model saved: bloomberg: May Warns of New Terrorism Trend After London Attack Kills Seven
+----------------------- 
+Fetched at 06/04/2017, 12:30:02
+Model saved: bloomberg: Turkey Says U.S.-Backed Assault to Retake Raqqa Begins
+----------------------- 
+Fetched at 06/04/2017, 12:30:02
+Model saved: bloomberg: AstraZeneca's Lynparza Slows Spread of Inherited Breast Cancer
+----------------------- 
+Fetched at 06/04/2017, 12:30:02
+Model saved: bloomberg: This Is What The Demise of Oil Looks Like
+----------------------- 
+Fetched at 06/04/2017, 12:30:02
+Model saved: bloomberg: The Country Adopting Electric Vehicles Faster Than Anywhere Else
+----------------------- 
+Fetched at 06/04/2017, 15:00:02
+Model saved: espn: Mike Brown steps up while Steve Kerr waits to step back in
+----------------------- 
+Fetched at 06/04/2017, 15:00:02
+Model saved: espn: Olney: Is the obsession with launch angle helping or hurting hitters?
+----------------------- 
+Fetched at 06/04/2017, 15:00:03
+Model saved: bloomberg: May Ramps Up Anti-Terror Rhetoric After Attack Kills Seven
+----------------------- 
+Fetched at 06/04/2017, 15:00:03
+Model saved: bloomberg: Trump Uses London Attack to Criticize Mayor, Promote Travel Ban
+----------------------- 
+Fetched at 06/04/2017, 15:00:03
+Model saved: bloomberg: At Top VC Firms, More Women Partners Doesnt Mean More Women Funded
+----------------------- 
+Fetched at 06/04/2017, 17:00:03
+Model saved: espn: The European football season is over ... so now what?
+----------------------- 
+Fetched at 06/04/2017, 17:00:03
+Model saved: bloomberg: May Ramps Up Terror Rhetoric as Pre-Election Attack Kills Seven
+----------------------- 
+Fetched at 06/04/2017, 17:00:03
+Model saved: bloomberg: Trump Uses London Attack to Criticize Mayor, Promote Ban
+----------------------- 
+Fetched at 06/04/2017, 17:00:03
+Model saved: bloomberg: Rice Says No Evidence Trump Travel Ban Would Make U.S. Safer
+----------------------- 
+Fetched at 06/04/2017, 17:00:03
+Model saved: bloomberg: Putin Downplays Interaction With Ex-Trump Adviser Flynn at Moscow Dinner
+----------------------- 
+Fetched at 06/04/2017, 17:00:13
+Model saved: techcrunch: SpaceX successfully launches reused Dragon spacecraft for ISSresupply
+----------------------- 
+Fetched at 06/04/2017, 17:06:33
+Model saved: espn: Mike Brown steps up while Steve Kerr waits to step back in
+----------------------- 
+Fetched at 06/04/2017, 17:06:33
+Model saved: espn: The three phases of LeBron James
+----------------------- 
+Fetched at 06/04/2017, 17:06:33
+Model saved: espn: Warriors Klay Thompson aims to break out of shooting slump
+----------------------- 
+Fetched at 06/04/2017, 17:06:33
+Model saved: espn: Predators' offense wakes up in big Game 3 win
+----------------------- 
+Fetched at 06/04/2017, 17:06:33
+Model saved: espn: Holloway dethrones Aldo, unifies UFC belts
+----------------------- 
+Fetched at 06/04/2017, 17:06:33
+Model saved: espn: Isn't it grand! Pujols hits No. 600
+----------------------- 
+Fetched at 06/04/2017, 17:06:33
+Model saved: espn: Taking Muhammad Ali home
+----------------------- 
+Fetched at 06/04/2017, 17:06:33
+Model saved: espn: The European football season is over ... so now what?
+----------------------- 
+Fetched at 06/04/2017, 17:06:33
+Model saved: espn: Real Madrid strength too much for Juventus, makes European Cup history
+----------------------- 
+Fetched at 06/04/2017, 17:06:33
+Model saved: bloomberg: May Ramps Up Terror Rhetoric as Pre-Election Attack Kills Seven
+----------------------- 
+Fetched at 06/04/2017, 17:06:33
+Model saved: bloomberg: Trump Uses London Attack to Criticize Mayor, Promote Ban
+----------------------- 
+Fetched at 06/04/2017, 17:06:33
+Model saved: bloomberg: Mexicos Largest State Votes in Bellwether for Presidential Race
+----------------------- 
+Fetched at 06/04/2017, 17:06:33
+Model saved: bloomberg: Rice Says No Evidence Trump Travel Ban Would Make U.S. Safer
+----------------------- 
+Fetched at 06/04/2017, 17:06:33
+Model saved: bloomberg: Putin Downplays Interaction With Ex-Trump Adviser Flynn at Moscow Dinner
+----------------------- 
+Fetched at 06/04/2017, 17:06:33
+Model saved: bloomberg: Chevys Bolt Creeps Along While Tesla Readies For a Sprint
+----------------------- 
+Fetched at 06/04/2017, 17:06:33
+Model saved: bloomberg: At Top VC Firms, More Women Partners Doesnt Mean More Women Funded
+----------------------- 
+Fetched at 06/04/2017, 17:06:33
+Model saved: bloomberg: Turkey Says U.S.-Backed Assault to Retake Raqqa Begins
+----------------------- 
+Fetched at 06/04/2017, 17:06:33
+Model saved: bloomberg: United Airlines Suspends Flights to Venezuela Starting July
+----------------------- 
+Fetched at 06/04/2017, 17:06:33
+Model saved: bloomberg: Trump Agrees Humans Play Part in Global Warming, Haley Says
+----------------------- 
+Fetched at 06/04/2017, 17:06:34
+Model saved: techcrunch: Facebook is broken
+----------------------- 
+Fetched at 06/04/2017, 17:06:44
+Model saved: techcrunch: SpaceX successfully launches reused Dragon spacecraft for ISSresupply
+----------------------- 
+Fetched at 06/04/2017, 17:06:44
+Model saved: techcrunch: Apple Music executive Bozoma Saint John could be leavingApple
+----------------------- 
+Fetched at 06/04/2017, 17:06:45
+Model saved: techcrunch: What to expect from WWDC2017
+----------------------- 
+Fetched at 06/04/2017, 20:30:01
+Model saved: espn: Venus Williams only looking forward after French Open loss
+----------------------- 
+Fetched at 06/04/2017, 20:30:01
+Model saved: espn: New voice in Rafael Nadal's head bringing back pitiless approach
+----------------------- 
+Fetched at 06/04/2017, 20:30:01
+Model saved: espn: Cubs can't blame loss of Dexter Fowler for team's troubles
+----------------------- 
+Fetched at 06/04/2017, 20:30:01
+Model saved: espn: Division-winning moves for every NL Central team
+----------------------- 
+Fetched at 06/04/2017, 20:30:01
+Model saved: espn: Olney: Is the obsession with launch angle helping or hurting hitters?
+----------------------- 
+Fetched at 06/04/2017, 20:30:02
+Model saved: bloomberg: Terror Dominates U.K. Election After Short-Lived Campaign Truce
+----------------------- 
+Fetched at 06/04/2017, 20:30:02
+Model saved: bloomberg: What to Watch for at Apple's Worldwide Developers Conference
+----------------------- 
+Fetched at 06/04/2017, 20:30:02
+Model saved: bloomberg: Tiananmen Vigil in Hong Kong Draws Smallest Crowd in Nine Years
+----------------------- 
+Fetched at 06/04/2017, 20:30:02
+Model saved: bloomberg: Warren Buffett's Annual Lunch Auction Starts Sunday Evening
+----------------------- 

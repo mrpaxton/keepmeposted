@@ -13,6 +13,21 @@ from rest_framework.response import Response
 
 MAX_NEWS = 10
 
+class TextScoreAPIView(APIView):
+    authentication_classes = []
+    permission_classes = []
+
+    def get(self, request, format=None):
+        articles = Article.objects.prefetch_related("keyphrases")
+        test_article = articles.filter(id=1454).first()
+        extracted_texts = [ kp.text for kp in test_article.keyphrases.all() ]
+        scores = [ kp.score for kp in test_article.keyphrases.all() ]
+        data = {
+            "labels": extracted_texts,
+            "default": scores,
+        }
+        return Response(data)
+
 
 class MockDataAPIView(APIView):
     authentication_classes = []

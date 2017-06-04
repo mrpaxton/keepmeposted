@@ -4,11 +4,6 @@
 
 <div class="container">
 
-    <div class="card-content white">
-        <div class='col-sm-6'>
-             <canvas id="myChart" width="400" height="400"></canvas>
-        </div>
-    </div>
 
     <div class="col s12 m7 l10 offset-l1">
 
@@ -37,7 +32,14 @@
       				<span class="card-title grey-text text-darken-4">Rake Analysis
 						<i class="material-icons right">close</i>
 					</span>
-      				<p>Here is some more information about this product that is only revealed once clicked on.</p>
+      				<p>TODO: Here is the summary of the Rake analysis...</p>
+                    <div class="card-content">
+                        <div class='col-sm-6'>
+                             <canvas id="myChart" width="400" height="400"></canvas>
+                             <canvas id="myChart2" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+
     			</div>
 
                 <div class="card-action center-align">
@@ -45,7 +47,6 @@
                     <a href={{obj.url}} 
                         class="waves-effect waves-light btn-large pink">READ</a>
                     <br/></br/>
-
 
                     {% comment %}
                         Showing images in carousel and extracted key phrases
@@ -85,7 +86,7 @@
 
     {% block jquery %}
 
-        var endpoint = "/api/mock/data/";
+        var endpoint = "/api/textscores/data/";
         var defaultData = [];
         var labels = [];
 
@@ -106,6 +107,51 @@
         function setChart() {
 
             var ctx = document.getElementById("myChart");
+            var ctx2 = document.getElementById("myChart2");
+            var graph = {
+
+                type: 'polarArea',
+
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: '# of Votes',
+                        data: defaultData,
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)',
+                            'rgba(35, 128, 128, 0.2)',
+                            'rgba(20, 255, 255, 0.2)',
+                        ],
+                        borderColor: [
+                            'rgba(255,99,132,1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)',
+                            'rgba(35, 128, 128, 1)',
+                            'rgba(20, 255, 255, 1)',
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true
+                            }
+                        }]
+                    }
+                }
+            }
+            //new Chart(ctx2, graph);
 
             new Chart( ctx, {
 
