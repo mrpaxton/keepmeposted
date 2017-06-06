@@ -58,14 +58,11 @@ class Article(models.Model):
     def natural_time(self):
         return naturaltime(self.timestamp)
 
-
     def __text_without_puncs(self, text):
-        clean_text = re.sub("[^a-zA-Z0-9 \n]", "", text)
-        return clean_text
-
+        return re.sub("[^a-zA-Z0-9 \n]", "", text)
 
     def extracted_text(self):
-        keyphrases = [ self.__text_without_puncs(kp.text) for kp in self.keyphrases.all() ]
+        keyphrases = [self.__text_without_puncs(kp.text) for kp in self.keyphrases.all()]
         return ", ".join(kp for kp in keyphrases)
 
     def photo_urls(self):
@@ -76,6 +73,54 @@ class Article(models.Model):
 
     def __unicode__(self):
         return str(self.title)
+
+
+    def __save_images(self, image_urls):
+
+        if image_urls and len(image_urls) >= 1:
+            print("  ==> saving related images: ")
+            # save_image_from_url()
+            for image_url in image_urls:
+                req = requests.get(image_url, stream=True)
+                if req.status_code == 200:
+                    filename = urllib.parse.unquote(image_url).split('/')[-1].split('?')[0]
+                    # skip blank files from TechCrunch ex: 1x1.jpg
+                    if filename.startswith("1x1"):
+                        continue
+
+                    tf = tempfile.NamedTemporaryFile()
+                    for block in req.iter_content(1024*8):
+                        if not block:
+                            break
+                        tf.write(block)
+
+                    photo = Photo()
+                    photo.image.save(filename, files.File(tf))
+                    self.photos.add(photo)
+                    print("  ==> <", filename, "> image saved successfully.\n")
+
+
+    def __save_keyphrases(self, text):
+
+        if text and len(text) > 100:
+            r = Rake()
+            r.extract_keywords_from_text(text)
+            ph_scores = r.get_ranked_phrases_with_scores()
+            # save score, text to Keyphrase model
+            top_score_tuples = ph_scores[:10]
+            if top_score_tuples and len(top_score_tuples) == 10:
+                for t in top_score_tuples: # (52.8878, 'foo bar baz')
+                    kp = Keyphrase()
+                    # need try catch
+                    kp.score = Decimal(t[0])
+                    kp.text = t[1]
+                    print("    phrase: " + kp.text + ", score: " + str(round(kp.score, 2)))
+                    kp.save()
+                    self.keyphrases.add(kp)
+
+                print("  Keyphrases and scores saved successfully.\n\n")
+
+
 
     def save(self, *args, **kwargs):
 
@@ -89,51 +134,15 @@ class Article(models.Model):
 
                 # 1. save related images to the article model, if any
                 tch = TechcrunchHelper(self.url)
-                image_urls = tch.all_images()
-                if image_urls and len(image_urls) >= 1:
-                    print("  ==> saving related images: ")
-                    # save_image_from_url()
-                    for image_url in image_urls:
-                        req = requests.get(image_url, stream=True)
-                        if req.status_code == 200:
-                            filename = urllib.parse.unquote(image_url).split('/')[-1].split('?')[0]
-                            # skip blank files from TechCrunch ex: 1x1.jpg
-                            if filename.startswith("1x1"):
-                                continue
+                self.__save_images(tch.all_images())
 
-                            tf = tempfile.NamedTemporaryFile()
-                            for block in req.iter_content(1024*8):
-                                if not block:
-                                    break
-                                tf.write(block)
-
-                            photo = Photo()
-                            photo.image.save(filename, files.File(tf))
-                            self.photos.add(photo)
-                            print("  ==> <", filename, "> image saved successfully.\n")
 
                 # 2. if text gathered successfully, feed text to Rake, save KP model
                 text = tch.all_text()
-                if text and len(text) > 100:
-                    r = Rake()
-                    r.extract_keywords_from_text(text)
-                    ph_scores = r.get_ranked_phrases_with_scores()
-                    # save score, text to Keyphrase model
-                    top_score_tuples = ph_scores[:10]
-                    if top_score_tuples and len(top_score_tuples) == 10:
-                        for t in top_score_tuples: # (52.8878, 'foo bar baz')
-                            kp = Keyphrase()
-                            # need try catch
-                            kp.score = Decimal(t[0])
-                            kp.text = t[1]
-                            print("    phrase: " + kp.text + ", score: " + str(round(kp.score, 2)))
-                            kp.save()
-                            self.keyphrases.add(kp)
+                self.__save_keyphrases(text)
 
-                        print("  Keyphrases and scores saved successfully.\n\n")
-
-                    #mentioned_topics
-                    print("===> ", tch.mentioned_topics(tch.related_links()))
+                #mentioned_topics
+                print("===> ", tch.mentioned_topics(tch.related_links()))
 
         # save
         else:
