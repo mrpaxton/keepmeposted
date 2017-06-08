@@ -58,9 +58,6 @@ class Article(models.Model):
     def natural_time(self):
         return naturaltime(self.timestamp)
 
-    def __text_without_puncs(self, text):
-        return re.sub("[^a-zA-Z0-9 \n]", "", text)
-
     def extracted_text(self):
         keyphrases = [self.__text_without_puncs(kp.text) for kp in self.keyphrases.all()]
         return ", ".join(kp for kp in keyphrases)
@@ -68,15 +65,33 @@ class Article(models.Model):
     def photo_urls(self):
         return [ "/".join(photo.image.name.split("/")[2:]) for photo in self.photos.all() ]
 
-    def __str__(self):
-        return str(self.title)
+    def save(self, *args, **kwargs):
+        # create an article object
+        if not self.pk:
+            super(Article, self).save(*args, **kwargs)
+            print("==> self.title created: ", self.title[:25])
 
-    def __unicode__(self):
-        return str(self.title)
+            if self.source == "techcrunch": #do Techcrunch specific logics
 
+                # 1. save related images to the article model, if any
+                tch = TechcrunchHelper(self.url)
+                self.__save_images(tch.all_images())
+
+                # 2. if text gathered successfully, feed text to Rake, save keyphrases in KP model
+                text = tch.all_text()
+                self.__save_keyphrases(text)
+
+                #mentioned_topics
+                print("===> ", tch.mentioned_topics(tch.related_links()))
+
+        else: # save an article object
+            super(Article, self).save(*args, **kwargs)
+            print("==> self.title saved: ", self.title[:25])
+
+    def __text_without_puncs(self, text):
+        return re.sub("[^a-zA-Z0-9 \n]", "", text)
 
     def __save_images(self, image_urls):
-
         if image_urls and len(image_urls) >= 1:
             print("  ==> saving related images: ")
             # save_image_from_url()
@@ -99,9 +114,7 @@ class Article(models.Model):
                     self.photos.add(photo)
                     print("  ==> <", filename, "> image saved successfully.\n")
 
-
     def __save_keyphrases(self, text):
-
         if text and len(text) > 100:
             r = Rake()
             r.extract_keywords_from_text(text)
@@ -117,37 +130,14 @@ class Article(models.Model):
                     print("    phrase: " + kp.text + ", score: " + str(round(kp.score, 2)))
                     kp.save()
                     self.keyphrases.add(kp)
-
                 print("  Keyphrases and scores saved successfully.\n\n")
 
+    def __str__(self):
+        return str(self.title)
 
+    def __unicode__(self):
+        return str(self.title)
 
-    def save(self, *args, **kwargs):
-
-        # create
-        if not self.pk:
-
-            super(Article, self).save(*args, **kwargs)
-            print("==> self.title created: ", self.title[:25])
-
-            if self.source == "techcrunch": #do Techcrunch specific logics
-
-                # 1. save related images to the article model, if any
-                tch = TechcrunchHelper(self.url)
-                self.__save_images(tch.all_images())
-
-
-                # 2. if text gathered successfully, feed text to Rake, save KP model
-                text = tch.all_text()
-                self.__save_keyphrases(text)
-
-                #mentioned_topics
-                print("===> ", tch.mentioned_topics(tch.related_links()))
-
-        # save
-        else:
-            super(Article, self).save(*args, **kwargs)
-            print("==> self.title saved: ", self.title[:15])
 
 
 class Keyphrase(models.Model):
@@ -158,6 +148,7 @@ class Keyphrase(models.Model):
 
     def __str__(self):
         return str(self.text + ": score: " + str(self.score))
+
 
 
 class Photo(models.Model):

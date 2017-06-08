@@ -3612,3 +3612,444 @@ Model saved: techcrunch: Apple introduces iOS11
 Fetched at 06/06/2017, 07:26:57
 Model saved: techcrunch: Apple announces macOS HighSierra
 ----------------------- 
+Fetched at 06/06/2017, 09:30:02
+Model saved: bloomberg: The Rest of the World Already Builds Infrastructure the Way Trump Wants To
+----------------------- 
+Fetched at 06/06/2017, 09:30:02
+Model saved: bloomberg: Will Privatized Air Traffic Control Put You In Danger?
+----------------------- 
+Fetched at 06/06/2017, 18:30:02
+Model saved: espn: Zach Lowe: How LeBron, Cavs can sharpen attack versus Warriors' dazzling D
+----------------------- 
+Fetched at 06/06/2017, 18:30:02
+Model saved: espn: Kyrie Irving says Cavs must 'never waver' no matter the odds
+----------------------- 
+Fetched at 06/06/2017, 18:30:02
+Model saved: espn: The final days of MMA fighter Kimbo Slice
+----------------------- 
+Fetched at 06/06/2017, 18:30:02
+Model saved: espn: State of Yankees-Red Sox rivalry: Who has the edge in AL East?
+----------------------- 
+Fetched at 06/06/2017, 18:30:02
+Model saved: espn: Major league litter: Can a strategic bat toss turn trash into treasure?
+----------------------- 
+Fetched at 06/06/2017, 18:30:02
+Model saved: espn: The death of the complete game
+----------------------- 
+Fetched at 06/06/2017, 18:30:02
+Model saved: espn: NFL execs grade every team's offseason: The rich get richer
+----------------------- 
+Fetched at 06/06/2017, 18:30:02
+Model saved: espn: Cowboys' life after Tony Romo smoother than most replacing franchise QBs
+----------------------- 
+Fetched at 06/06/2017, 18:30:02
+Model saved: espn: What it takes from hometown players to succeed at French Open
+----------------------- 
+Fetched at 06/06/2017, 18:30:03
+Model saved: bloomberg: Trump, Taking Sides in Gulf, Backs Isolation of Qatar
+----------------------- 
+Fetched at 06/06/2017, 18:30:03
+Model saved: bloomberg: Uber Fires More Than 20 Employees in Harassment Probe
+----------------------- 
+Fetched at 06/06/2017, 18:30:03
+Model saved: bloomberg: Labour Privately Preparing for a U.K. Election Defeat
+----------------------- 
+Fetched at 06/06/2017, 18:30:03
+Model saved: bloomberg: Blankfein Joins Dimon's Call for Bigger U.S. Infrastructure Push
+----------------------- 
+Fetched at 06/06/2017, 18:30:03
+Model saved: bloomberg: The Leaked NSA Report Is Being Read Backward
+----------------------- 
+Fetched at 06/06/2017, 18:30:03
+Model saved: bloomberg: J. Crew May Never Be the Same Again
+----------------------- 
+Fetched at 06/06/2017, 18:30:03
+Model saved: bloomberg: How Much Do You Need to Make to Send a Kid to College?
+----------------------- 
+Fetched at 06/06/2017, 18:30:03
+Model saved: bloomberg: The New Gold Rush Is All About Vaults
+----------------------- 
+Fetched at 06/06/2017, 18:30:03
+Model saved: bloomberg: Americans Are Pouring Money Into Their Homes Like It's the 1990s
+----------------------- 
+Fetched at 06/06/2017, 18:38:36
+Model saved: espn: Zach Lowe: How LeBron, Cavs can sharpen attack versus Warriors' dazzling D
+----------------------- 
+Fetched at 06/06/2017, 18:38:36
+Model saved: espn: Kyrie Irving says Cavs must 'never waver' no matter the odds
+----------------------- 
+Fetched at 06/06/2017, 18:38:36
+Model saved: espn: The final days of MMA fighter Kimbo Slice
+----------------------- 
+Fetched at 06/06/2017, 18:38:36
+Model saved: espn: State of Yankees-Red Sox rivalry: Who has the edge in AL East?
+----------------------- 
+Fetched at 06/06/2017, 18:38:36
+Model saved: espn: Major league litter: Can a strategic bat toss turn trash into treasure?
+----------------------- 
+Fetched at 06/06/2017, 18:38:36
+Model saved: espn: The death of the complete game
+----------------------- 
+Fetched at 06/06/2017, 18:38:36
+Model saved: espn: NFL execs grade every team's offseason: The rich get richer
+----------------------- 
+Fetched at 06/06/2017, 18:38:36
+Model saved: espn: Cowboys' life after Tony Romo smoother than most replacing franchise QBs
+----------------------- 
+Fetched at 06/06/2017, 18:38:36
+Model saved: espn: 2017 Women's College World Series  -- Paige Lowary, Shay Knighten star in Oklahoma's historic Game 1 win over Florida
+----------------------- 
+Fetched at 06/06/2017, 18:38:36
+Model saved: espn: 2017 Women's College World Series  -- Oklahoma Sooners-Florida Gators Game 1 by the numbers
+----------------------- 
+Fetched at 06/06/2017, 18:38:36
+Model saved: bloomberg: Trump, Taking Sides in Gulf, Backs Isolation of Qatar
+----------------------- 
+Fetched at 06/06/2017, 18:38:36
+Model saved: bloomberg: Uber Fires More Than 20 Employees in Harassment Probe
+----------------------- 
+Fetched at 06/06/2017, 18:38:36
+Model saved: bloomberg: Kelly Says Hold on Trump's Travel Ban Imperiling U.S. Safety
+----------------------- 
+Fetched at 06/06/2017, 18:38:36
+Model saved: bloomberg: Labour Privately Preparing for a U.K. Election Defeat
+----------------------- 
+Fetched at 06/06/2017, 18:38:36
+Model saved: bloomberg: Trumps America Is Facing a $13 Trillion Consumer Debt Hangover
+----------------------- 
+Fetched at 06/06/2017, 18:38:36
+Model saved: bloomberg: A Vast Blockchain Experiment Could Change Russia
+----------------------- 
+Fetched at 06/06/2017, 18:38:36
+Model saved: bloomberg: J. Crew May Never Be the Same Again
+----------------------- 
+Fetched at 06/06/2017, 18:38:36
+Model saved: bloomberg: Blankfein Joins Dimon's Call for Bigger U.S. Infrastructure Push
+----------------------- 
+Fetched at 06/06/2017, 18:38:36
+Model saved: bloomberg: In Trumps White House, Everythings Coming in Two Weeks
+----------------------- 
+Fetched at 06/06/2017, 18:38:36
+Model saved: bloomberg: How Much Do You Need to Make to Send a Kid to College?
+----------------------- 
+Fetched at 06/06/2017, 18:38:37
+Model saved: techcrunch: Everything Apple announced at its WWDCkeynote
+----------------------- 
+Fetched at 06/06/2017, 18:38:38
+Model saved: techcrunch: Bozoma Saint John heads to Uber fromApple
+----------------------- 
+Fetched at 06/06/2017, 18:38:38
+Model saved: techcrunch: LocalGlobe goes beyond the Kleinbrand
+----------------------- 
+Fetched at 06/06/2017, 18:38:38
+Model saved: techcrunch: Apple finally wakes up to QR codes, but its toolate
+----------------------- 
+Fetched at 06/06/2017, 19:44:16
+Model saved: espn: Zach Lowe: How LeBron, Cavs can sharpen attack versus Warriors' dazzling D
+----------------------- 
+Fetched at 06/06/2017, 19:44:16
+Model saved: espn: Kyrie Irving says Cavs must 'never waver' no matter the odds
+----------------------- 
+Fetched at 06/06/2017, 19:44:16
+Model saved: espn: The final days of MMA fighter Kimbo Slice
+----------------------- 
+Fetched at 06/06/2017, 19:44:16
+Model saved: espn: State of Yankees-Red Sox rivalry: Who has the edge in AL East?
+----------------------- 
+Fetched at 06/06/2017, 19:44:16
+Model saved: espn: Major league litter: Can a strategic bat toss turn trash into treasure?
+----------------------- 
+Fetched at 06/06/2017, 19:44:16
+Model saved: espn: The death of the complete game
+----------------------- 
+Fetched at 06/06/2017, 19:44:16
+Model saved: espn: NFL execs grade every team's offseason: The rich get richer
+----------------------- 
+Fetched at 06/06/2017, 19:44:16
+Model saved: espn: Cowboys' life after Tony Romo smoother than most replacing franchise QBs
+----------------------- 
+Fetched at 06/06/2017, 19:44:16
+Model saved: espn: 2017 Women's College World Series  -- Oklahoma Sooners-Florida Gators Game 2 could be even more dramatic
+----------------------- 
+Fetched at 06/06/2017, 19:44:16
+Model saved: espn: 2017 Women's College World Series  -- Paige Lowary, Shay Knighten star in Oklahoma's historic Game 1 win over Florida
+----------------------- 
+Fetched at 06/06/2017, 19:44:16
+Model saved: bloomberg: Trump, Taking Sides in Gulf, Backs Isolation of Qatar
+----------------------- 
+Fetched at 06/06/2017, 19:44:16
+Model saved: bloomberg: Uber Fires More Than 20 Employees in Harassment Probe
+----------------------- 
+Fetched at 06/06/2017, 19:44:16
+Model saved: bloomberg: Startups Ties to Kushners Came With Benefits, Until It Got Complicated
+----------------------- 
+Fetched at 06/06/2017, 19:44:16
+Model saved: bloomberg: Momentum Stocks Just Had Their Best Winning Streak in Nearly 25 Years
+----------------------- 
+Fetched at 06/06/2017, 19:44:16
+Model saved: bloomberg: Kelly Says Hold on Trump's Travel Ban Imperiling U.S. Safety
+----------------------- 
+Fetched at 06/06/2017, 19:44:16
+Model saved: bloomberg: A Vast Blockchain Experiment Could Change Russia
+----------------------- 
+Fetched at 06/06/2017, 19:44:16
+Model saved: bloomberg: Pro-Trump Group Labels Comey Political 'Showboat' in New Ad
+----------------------- 
+Fetched at 06/06/2017, 19:44:16
+Model saved: bloomberg: Vladimir Putin's $1 Million Watch Coming to Auction
+----------------------- 
+Fetched at 06/06/2017, 19:44:16
+Model saved: bloomberg: Infrastructure Deals Offer No Quick Fix, BlackRock's Barry Says
+----------------------- 
+Fetched at 06/06/2017, 19:44:16
+Model saved: bloomberg: Labour Privately Preparing for a U.K. Election Defeat
+----------------------- 
+Fetched at 06/06/2017, 19:44:17
+Model saved: techcrunch: Everything Apple announced at its WWDCkeynote
+----------------------- 
+Fetched at 06/06/2017, 19:44:18
+Model saved: techcrunch: Bozoma Saint John heads to Uber fromApple
+----------------------- 
+Fetched at 06/06/2017, 19:44:18
+Model saved: techcrunch: LocalGlobe goes beyond the Kleinbrand
+----------------------- 
+Fetched at 06/06/2017, 23:54:08
+Model saved: espn: How Steph Curry and Kevin Durant are destroying nets -- literally
+----------------------- 
+Fetched at 06/06/2017, 23:54:08
+Model saved: espn: The Warriors Fast-Break Machine Slows On The Road
+----------------------- 
+Fetched at 06/06/2017, 23:54:08
+Model saved: espn: WatchESPN: Live Sports, Game Replays, Video Highlights
+----------------------- 
+Fetched at 06/06/2017, 23:54:08
+Model saved: bloomberg: Comey Said to Stop Short of Saying Whether Trump Obstructed Justice
+----------------------- 
+Fetched at 06/06/2017, 23:54:08
+Model saved: bloomberg: White House Won't Say If Trump Backs Attorney General Sessions
+----------------------- 
+Fetched at 06/06/2017, 23:54:08
+Model saved: bloomberg: Do Americans Have a Right to Read Trumps Tweets?
+----------------------- 
+Fetched at 06/06/2017, 23:54:08
+Model saved: bloomberg: Apple Taps Jessica Alba, Gwyneth Paltrow to Front Video Hopes
+----------------------- 
+Fetched at 06/06/2017, 23:54:08
+Model saved: bloomberg: Robot Ghost Ships to Take Miner's Technology Drive on High Seas
+----------------------- 
+Fetched at 06/06/2017, 23:54:08
+Model saved: bloomberg: Trump Takes Sides in Gulf Rift, Backs Isolation of Qatar
+----------------------- 
+Fetched at 06/06/2017, 23:54:08
+Model saved: bloomberg: J. Crew May Never Be the Same Again
+----------------------- 
+Fetched at 06/06/2017, 23:54:09
+Model saved: techcrunch: Crunch Report
+----------------------- 
+Fetched at 06/06/2017, 23:54:10
+Model saved: techcrunch: Take a look at these first pictures of Fiskers $130K EMotion electriccar
+----------------------- 
+Fetched at 06/07/2017, 02:00:02
+Model saved: espn: How The Cavs Can Push Back In Game 3
+----------------------- 
+Fetched at 06/07/2017, 02:00:02
+Model saved: bloomberg: China Missiles Able to Send Nukes to Western Pacific, U.S. Says
+----------------------- 
+Fetched at 06/07/2017, 02:00:02
+Model saved: bloomberg: Trump's Presidential Theater of the Absurd
+----------------------- 
+Fetched at 06/07/2017, 02:00:02
+Model saved: bloomberg: Robot Ghost Ships to Extend Miner's Technology Drive to Seas
+----------------------- 
+Fetched at 06/07/2017, 02:00:02
+Model saved: bloomberg: The New Gold Rush Is All About Vaults
+----------------------- 
+Fetched at 06/07/2017, 02:00:02
+Model saved: bloomberg: Chinese Giants Are Taking Over Hong Kong
+----------------------- 
+Fetched at 06/07/2017, 04:00:02
+Model saved: espn: Real or not? Did Scooter Gennett have the best offensive performance ever?
+----------------------- 
+Fetched at 06/07/2017, 04:00:02
+Model saved: espn: Scooter rolls: 4 HRs, 10 RBIs for Reds' Gennett
+----------------------- 
+Fetched at 06/07/2017, 04:00:02
+Model saved: espn: 2017 Women's College World Series  - How Shay Knighten lifted Oklahoma Sooners to back-to-back national titles
+----------------------- 
+Fetched at 06/07/2017, 04:00:03
+Model saved: bloomberg: Christie Deputy, Ex-Goldman Sachs Executive Win Primaries
+----------------------- 
+Fetched at 06/07/2017, 07:30:02
+Model saved: espn: 2017 Women's College World Series -- Oklahoma Sooners started postseason with loss to North Dakota State, ended it as national champions
+----------------------- 
+Fetched at 06/07/2017, 07:30:02
+Model saved: espn: ICYMI at French Open: More rain, more upsets, more Serena Williams
+----------------------- 
+Fetched at 06/07/2017, 07:30:02
+Model saved: espn: W2W4 at French Open: Novak Djokovic faces stern test
+----------------------- 
+Fetched at 06/07/2017, 07:30:02
+Model saved: espn: Surprise! Bacsinszky, Ostapenko set up birthday party
+----------------------- 
+Fetched at 06/07/2017, 07:30:02
+Model saved: espn: In showdown against Aaron Judge, Red Sox's Joe Kelly brings the heat
+----------------------- 
+Fetched at 06/07/2017, 07:30:02
+Model saved: espn: Yankees need to drop Masahiro Tanaka from rotation
+----------------------- 
+Fetched at 06/07/2017, 07:30:02
+Model saved: bloomberg: Sessions Has Suggested Resigning as Tensions Grow With Trump
+----------------------- 
+Fetched at 06/07/2017, 07:30:02
+Model saved: bloomberg: London's Big Bang Banking Hub Pivots for Post-Brexit Reinvention
+----------------------- 
+Fetched at 06/07/2017, 07:30:02
+Model saved: bloomberg: Red Sox Announcer Remy Says Tanaka Shouldn't Get Translator
+----------------------- 
+Fetched at 06/07/2017, 17:00:05
+Model saved: espn: The man who turned LeBron and the Cavs into a team
+----------------------- 
+Fetched at 06/07/2017, 17:00:05
+Model saved: espn: How likely is historic Warriors sweep in Cleveland?
+----------------------- 
+Fetched at 06/07/2017, 17:00:05
+Model saved: espn: How much money would Warriors leave on table with a sweep?
+----------------------- 
+Fetched at 06/07/2017, 17:00:05
+Model saved: espn: Is this the year Clayton Kershaw finally ends the Kershaw-Koufax debate?
+----------------------- 
+Fetched at 06/07/2017, 17:00:05
+Model saved: espn: What makes the Astros the best team in baseball?
+----------------------- 
+Fetched at 06/07/2017, 17:00:05
+Model saved: espn: Scooter Gennett Is Somehow Not The Most Random Player To Hit Four HRs
+----------------------- 
+Fetched at 06/07/2017, 17:00:05
+Model saved: espn: Novak Djokovic's loss just a bad day or a sign of something more?
+----------------------- 
+Fetched at 06/07/2017, 17:00:05
+Model saved: espn: NFL win projections that differ most from Vegas odds
+----------------------- 
+Fetched at 06/07/2017, 17:00:05
+Model saved: bloomberg: U.S. Spy Chiefs Refuse to Say If Trump Pressed Them on FBI Probe
+----------------------- 
+Fetched at 06/07/2017, 17:00:05
+Model saved: bloomberg: Bill Gross Says Market Risk Is Highest Since Pre-2008 Crisis
+----------------------- 
+Fetched at 06/07/2017, 17:00:05
+Model saved: bloomberg: Oil Slumps as U.S. Stockpile Increase Stirs Oversupply Concerns
+----------------------- 
+Fetched at 06/07/2017, 17:00:05
+Model saved: bloomberg: Eight Senators to Watch at the Comey Hearing
+----------------------- 
+Fetched at 06/07/2017, 17:00:05
+Model saved: bloomberg: Generals Warn That U.S. Security Is at Stake In Race for New Energy Superiority
+----------------------- 
+Fetched at 06/07/2017, 17:00:05
+Model saved: bloomberg: Give Qatar a Break
+----------------------- 
+Fetched at 06/07/2017, 17:00:05
+Model saved: bloomberg: Jamie Dimon Wants This Guy to Disrupt JPMorgan
+----------------------- 
+Fetched at 06/07/2017, 17:00:05
+Model saved: bloomberg: Trump Wants to Gut the Agency Behind the Shale Boom
+----------------------- 
+Fetched at 06/07/2017, 17:00:05
+Model saved: bloomberg: How Spain's Zombie Bank Rescue Snares Bondholders: QuickTake Q&A
+----------------------- 
+Fetched at 06/07/2017, 17:00:07
+Model saved: techcrunch: Cadre collects $65 million in Series Cfunding
+----------------------- 
+Fetched at 06/07/2017, 19:30:02
+Model saved: espn: Report: Stoops retiring as Sooners' coach
+----------------------- 
+Fetched at 06/07/2017, 19:30:03
+Model saved: bloomberg: Comey Says Trump Asked Him to End FBI Probe of Ex-Aide Flynn
+----------------------- 
+Fetched at 06/07/2017, 19:30:03
+Model saved: bloomberg: U.S. Stocks Rise, Treasuries Slide With Crude Oil: Markets Wrap
+----------------------- 
+Fetched at 06/07/2017, 19:30:03
+Model saved: bloomberg: Anthem's Obamacare Exit Could Leave 300,000 Without Options
+----------------------- 
+Fetched at 06/07/2017, 19:30:03
+Model saved: bloomberg: Stand Against Terrorism, Even in Iran
+----------------------- 
+Fetched at 06/07/2017, 19:30:03
+Model saved: bloomberg: JPMorgan Will Fund Luxury-Condo Tower at NYC's 1 Wall Street
+----------------------- 
+Fetched at 06/07/2017, 19:30:03
+Model saved: bloomberg: Weed Startups Will Make Warehouse Rents More Expensive in L.A. and Boston
+----------------------- 
+Fetched at 06/07/2017, 19:30:03
+Model saved: bloomberg: Solamere Partners Said Close to Buying Piece of New York Yankees
+----------------------- 
+Fetched at 06/07/2017, 19:30:03
+Model saved: bloomberg: Your Twitter Outrage May Require Libel Insurance
+----------------------- 
+Fetched at 06/07/2017, 22:30:03
+Model saved: espn: Meet Lincoln Riley, the 33-year-old taking over the Oklahoma Sooners
+----------------------- 
+Fetched at 06/07/2017, 22:30:03
+Model saved: espn: With AL East in balance, Yankees turn to their 'glue' -- CC Sabathia
+----------------------- 
+Fetched at 06/07/2017, 22:30:03
+Model saved: espn: Murray continues to defy expectations in Paris
+----------------------- 
+Fetched at 06/07/2017, 22:30:04
+Model saved: bloomberg: Comey's Side of the Story
+----------------------- 
+Fetched at 06/07/2017, 22:30:04
+Model saved: bloomberg: Crude Oil's Biggest Tumble Since March Shown in Three Charts
+----------------------- 
+Fetched at 06/07/2017, 22:30:04
+Model saved: bloomberg: Uber Workplace Probe Extends to Handling of India Rape Case
+----------------------- 
+Fetched at 06/07/2017, 22:30:04
+Model saved: bloomberg: Elliott's Singer Warns System May Be More Leveraged Than 2008
+----------------------- 
+Fetched at 06/07/2017, 22:30:04
+Model saved: bloomberg: One Chart Suggests Trump May Be Wrong About Emissions and GDP
+----------------------- 
+Fetched at 06/07/2017, 22:30:04
+Model saved: bloomberg: Ivascyn Sees No Sweeping Tax Reform, Infrastructure Spending
+----------------------- 
+Fetched at 06/08/2017, 00:30:12
+Model saved: espn: Bob Stoops joins rare company in college football history
+----------------------- 
+Fetched at 06/08/2017, 00:30:12
+Model saved: bloomberg: North Korea Tests Short-Range Missiles, South Korea Says
+----------------------- 
+Fetched at 06/08/2017, 00:30:12
+Model saved: bloomberg: Boeing Woos United and Lion in a Bid to Boost Max 10 Launch
+----------------------- 
+Fetched at 06/08/2017, 00:30:12
+Model saved: bloomberg: U.K. Housing Weakens Further as Market Emits `Ominous' Signals
+----------------------- 
+Fetched at 06/08/2017, 00:30:12
+Model saved: bloomberg: New York Health Insurers Ask for 16.6% Boost to Obamacare Rates
+----------------------- 
+Fetched at 06/08/2017, 03:30:07
+Model saved: espn: Clayton Kershaw vs. Stephen Strasburg lives up to the hype
+----------------------- 
+Fetched at 06/08/2017, 03:30:07
+Model saved: espn: What are those? Lonzo Ball spotted in Adidas kicks at Lakers workout
+----------------------- 
+Fetched at 06/08/2017, 03:30:07
+Model saved: espn: Should Lakers pass on Lonzo Ball for Fox, Jackson?
+----------------------- 
+Fetched at 06/08/2017, 03:30:07
+Model saved: espn: Who should replace Jerry West on a new NBA logo?
+----------------------- 
+Fetched at 06/08/2017, 03:30:08
+Model saved: bloomberg: Trump Has No Plan to Fire Sessions as Attorney General
+----------------------- 
+Fetched at 06/08/2017, 03:30:08
+Model saved: bloomberg: North Korea Tests Short-Range Missiles as Moon Halts Shield
+----------------------- 
+Fetched at 06/08/2017, 03:30:08
+Model saved: bloomberg: Oliver Stone: Megyn Kelly Didn't Know Her Stuff With Putin
+----------------------- 
+Fetched at 06/08/2017, 03:30:08
+Model saved: bloomberg: NASA Picks 12 New Astronauts From Crush of Applicants
+----------------------- 

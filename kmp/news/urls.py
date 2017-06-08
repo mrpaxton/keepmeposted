@@ -8,6 +8,8 @@ from .views import (
     GeneralArticleListView,
     SportsArticleListView,
     TechArticleListView,
+
+    ArticleKeyphrasesAPIView,
 )
 
 
@@ -16,5 +18,7 @@ urlpatterns = [
     url( r'^finance', FinanceArticleListView.as_view(), name="finance-article-list"),
     url( r'^sports', SportsArticleListView.as_view(), name="sports-article-list"),
     url( r'^tech', TechArticleListView.as_view(), name="tech-article-list"),
+
+    url(r'^(?P<pk>[\d]+)/$', ArticleKeyphrasesAPIView.as_view(), name="detail"),
 ]
 

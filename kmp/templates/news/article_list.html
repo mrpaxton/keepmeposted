@@ -29,10 +29,11 @@
                 </div>
 
                 <div class="card-reveal">
-      				<span class="card-title grey-text text-darken-4">Rake Analysis
+                    <br/>
+      				<span class="card-title grey-text text-darken-4">What's this article about?
 						<i class="material-icons right">close</i>
 					</span>
-      				<p>TODO: Here is the summary of the Rake analysis...</p>
+      				<p>Rapid Automatic Keyword Extraction(RAKE) algorithm extracts key phrases from the news</p>
                     <div class="card-content">
                         <div class='col-sm-6'>
                              <canvas id="myChart" width="400" height="400"></canvas>
@@ -58,7 +59,9 @@
                             <div class="carousel slide arrow center cyan darken-1" data-indicators="true">
                                 {% for pu in obj.photo_urls %}
                                     {% load static %}
-                                    <a class="carousel-item" href="#one!"><img style="width:120%" src={% static pu %} /></a>
+                                    <a class="carousel-item" href="#one!">
+                                        <img style="width:100%" src={% static pu %} />
+                                    </a>
                                 {% endfor %}
                             </div>
                         {% endif %}
@@ -68,7 +71,6 @@
                                 <h5 class="gray-text">Inside This Article</h5>
                                 <p class="flow-text small gray-text">{{ obj.extracted_text }}</p>
                             </div>
-
                         {% endif %}
 
                     {% endif %}

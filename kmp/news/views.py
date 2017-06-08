@@ -10,8 +10,18 @@ from .models import Article, Category
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
+from rest_framework.generics import ListAPIView
+
+from news.serializers import ArticleSerializer, KeyphraseSerializer
 
 MAX_NEWS = 10
+
+
+class ArticleKeyphrasesAPIView(ListAPIView):
+    queryset = Article.objects.all().prefetch_related("keyphrases")
+    serializer_class = ArticleSerializer
+    lookup_field = 'pk'
+
 
 class TextScoreAPIView(APIView):
     authentication_classes = []
@@ -19,7 +29,7 @@ class TextScoreAPIView(APIView):
 
     def get(self, request, format=None):
         articles = Article.objects.prefetch_related("keyphrases")
-        test_article = articles.filter(id=1454).first()
+        test_article = articles.filter(id=1744).first()
         extracted_texts = [ kp.text for kp in test_article.keyphrases.all() ]
         scores = [ kp.score for kp in test_article.keyphrases.all() ]
         data = {
@@ -27,21 +37,6 @@ class TextScoreAPIView(APIView):
             "default": scores,
         }
         return Response(data)
-
-
-class MockDataAPIView(APIView):
-    authentication_classes = []
-    permission_classes = []
-
-    def get(self, request, format=None):
-         qs_count = 20 #User.objects.all().count()
-         labels = ["Users long label name really long label name werwer werw sdfsdf werwer", "Blue foo bar baz yo ho la", "Yellow hello there rad cool dope epic", "Green", "Purple", "Orange", "Teal", "Cyan"]
-         default_items = [qs_count, 23, 2, 3, 12, 2, 5, 35]
-         data = {
-                 "labels": labels,
-                 "default": default_items,
-         }
-         return Response(data)
 
 
 class SportsArticleListView(ListView):
