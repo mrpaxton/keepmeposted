@@ -1,5 +1,8 @@
+
+
 from rest_framework.serializers import ModelSerializer, ListSerializer
 from news.models import Article, Keyphrase
+
 
 
 class KeyphraseSerializer(ModelSerializer):
@@ -10,11 +13,13 @@ class KeyphraseSerializer(ModelSerializer):
             'score',
         )
 
+
 class ArticleSerializer(ModelSerializer):
     keyphrases = KeyphraseSerializer(many=True)
     class Meta:
         model = Article
         fields = (
+            'id',
             'title',
             'keyphrases',
         )
