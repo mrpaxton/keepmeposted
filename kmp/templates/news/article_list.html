@@ -23,7 +23,9 @@
 							{{ obj.title }}
                             <br/>
                             <input type="hidden" id="article-id" value={{ obj.id }} />
-                            <i id={{ obj.id }} class="more material-icons right">more_vert</i>
+                            {% if obj.has_keyphrases %}
+                                <i id={{ obj.id }} class="more material-icons right">more_vert</i>
+                            {% endif %}
 						</span>
                     </blockquote>
                     <p class="flow-text small">{{ obj.description }}</p>
@@ -32,14 +34,13 @@
 
                 <div class="card-reveal">
                     <br/>
-      				<span class="card-title grey-text text-darken-4">What's this article about?
+      				<span class="card-title grey-text text-darken-4">Relevant Keywords
                         <i class="material-icons right">close</i>
 					</span>
-      				<p>Rapid Automatic Keyword Extraction(RAKE) algorithm extracts key phrases from the news</p>
+                    <p>Title: {{obj.title}}</p>
                     <div class="card-content">
                         <div class='col-sm-6'>
-                             <canvas id="myChart" width="400" height="400"></canvas>
-                             <canvas id="myChart2" width="400" height="400"></canvas>
+                            <canvas id="keyphraseChart-{{obj.id}}" width="400" height="400"></canvas>
                         </div>
                     </div>
 
@@ -57,8 +58,15 @@
 
                     {% if obj.source == "techcrunch" %}
 
+                        {% if obj.photo_urls|length > 1 or obj.extracted_text|length > 0 %}
+                            <div class="card-content pink lighten-3">
+                                <h5 class="gray-text">Inside This Article</h5>
+                            </div>
+
+                        {% endif %}
+
                         {% if obj.photo_urls|length > 1 %}
-                            <div class="carousel slide arrow center cyan darken-1" data-indicators="true">
+                            <div class="carousel slide arrow center pink lighten-3" data-indicators="true">
                                 {% for pu in obj.photo_urls %}
                                     {% load static %}
                                     <a class="carousel-item" href="#one!">
@@ -69,8 +77,7 @@
                         {% endif %}
 
                         {% if obj.extracted_text|length > 0 %}
-                            <div class="card-content cyan darken-1 flow-text small">
-                                <h5 class="gray-text">Inside This Article</h5>
+                            <div class="card-content pink lighten-3 flow-text small">
                                 <p class="flow-text small gray-text">{{ obj.extracted_text }}</p>
                             </div>
                         {% endif %}
@@ -90,16 +97,13 @@
 
     $("i.more").click(function(e) {
 
-        <!--e.preventDefault();-->
-
-        alert(this.id);
-
         {% block jquery %}
 
             var endpoint = "/articles/" + this.id;
-            var defaultData = [];
+            var scores = [];
             var labels = [];
             var title = "";
+            var chartId = "keyphraseChart-" + this.id;
 
             $.ajax({
                 method: "GET",
@@ -107,8 +111,8 @@
                 success: function(data){
                     title = data.title
                     labels = data.keyphrases.map( function(kp){ return kp.text; } );
-                    defaultData = data.keyphrases.map( function(kp){ return kp.score; } );
-                    setChart()
+                    scores = data.keyphrases.map( function(kp){ return kp.score; } );
+                    setChart(chartId, labels, scores)
                 },
                 error: function(error_data){
                     console.log("Error getting data from API")
@@ -116,10 +120,10 @@
                 }
             })
 
-            function setChart() {
+            function setChart(chartId, labels, scores) {
 
-                var ctx = document.getElementById("myChart");
-                var ctx2 = document.getElementById("myChart2");
+                var ctx = document.getElementById(chartId);
+
                 var graph = {
 
                     type: 'polarArea',
@@ -128,7 +132,7 @@
                         labels: labels,
                         datasets: [{
                             label: '# of Votes',
-                            data: defaultData,
+                            data: scores,
                             backgroundColor: [
                                 'rgba(255, 99, 132, 0.2)',
                                 'rgba(54, 162, 235, 0.2)',
@@ -138,6 +142,8 @@
                                 'rgba(255, 159, 64, 0.2)',
                                 'rgba(35, 128, 128, 0.2)',
                                 'rgba(20, 255, 255, 0.2)',
+                                'rgba(135, 128, 128, 0.2)',
+                                'rgba(120, 255, 255, 0.2)',
                             ],
                             borderColor: [
                                 'rgba(255,99,132,1)',
@@ -148,6 +154,8 @@
                                 'rgba(255, 159, 64, 1)',
                                 'rgba(35, 128, 128, 1)',
                                 'rgba(20, 255, 255, 1)',
+                                'rgba(135, 128, 128, 1)',
+                                'rgba(120, 255, 255, 1)',
                             ],
                             borderWidth: 1
                         }]
@@ -157,57 +165,14 @@
                         scales: {
                             yAxes: [{
                                 ticks: {
-                                    beginAtZero:true
+                                    beginAtZero: true
                                 }
                             }]
                         }
                     }
                 }
-                //new Chart(ctx2, graph);
+                new Chart(ctx, graph);
 
-                new Chart( ctx, {
-
-                    type: 'polarArea',
-
-                    data: {
-                        labels: labels,
-                        datasets: [{
-                            label: '# of Votes',
-                            data: defaultData,
-                            backgroundColor: [
-                                'rgba(255, 99, 132, 0.2)',
-                                'rgba(54, 162, 235, 0.2)',
-                                'rgba(255, 206, 86, 0.2)',
-                                'rgba(75, 192, 192, 0.2)',
-                                'rgba(153, 102, 255, 0.2)',
-                                'rgba(255, 159, 64, 0.2)',
-                                'rgba(35, 128, 128, 0.2)',
-                                'rgba(20, 255, 255, 0.2)',
-                            ],
-                            borderColor: [
-                                'rgba(255,99,132,1)',
-                                'rgba(54, 162, 235, 1)',
-                                'rgba(255, 206, 86, 1)',
-                                'rgba(75, 192, 192, 1)',
-                                'rgba(153, 102, 255, 1)',
-                                'rgba(255, 159, 64, 1)',
-                                'rgba(35, 128, 128, 1)',
-                                'rgba(20, 255, 255, 1)',
-                            ],
-                            borderWidth: 1
-                        }]
-                    },
-
-                    options: {
-                        scales: {
-                            yAxes: [{
-                                ticks: {
-                                    beginAtZero:true
-                                }
-                            }]
-                        }
-                    }
-                });
             }
 
         {% endblock %}

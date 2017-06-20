@@ -65,11 +65,15 @@ class Article(models.Model):
     def photo_urls(self):
         return [ "/".join(photo.image.name.split("/")[2:]) for photo in self.photos.all() ]
 
+    def has_keyphrases(self):
+        return self.keyphrases.count() >= 1
+
     def save(self, *args, **kwargs):
         # create an article object
         if not self.pk:
             super(Article, self).save(*args, **kwargs)
-            print("==> self.title created: ", self.title[:25])
+
+            print("==> Article created. Title: ", self.title[:25] + "...")
 
             if self.source == "techcrunch": #do Techcrunch specific logics
 
@@ -81,15 +85,31 @@ class Article(models.Model):
                 text = tch.all_text()
                 self.__save_keyphrases(text)
 
+
+                # 3. save related topics retrieved from the related URL slugs by TC
                 #mentioned_topics
-                print("===> ", tch.mentioned_topics(tch.related_links()))
+                # print("===> ", tch.mentioned_topics(tch.related_links()))
+                mentioned_topics = tch.mentioned_topics(tch.related_links())
+                self.__save_related_topics(mentioned_topics)
 
         else: # save an article object
             super(Article, self).save(*args, **kwargs)
-            print("==> self.title saved: ", self.title[:25])
+            print("==> Article saved. Title: ", self.title[:25] + "...")
+
 
     def __text_without_puncs(self, text):
         return re.sub("[^a-zA-Z0-9 \n]", "", text)
+
+
+    def __save_related_topics(self, topics):
+        if topics and len(topics) > 1:
+            for topic in topics:
+                rt = RelatedTopic()
+                rt.link = topic
+                rt.save()
+                self.related_topics.add(rt)
+                print("  ==> Related topic: ", topic, " saved successfully.")
+
 
     def __save_images(self, image_urls):
         if image_urls and len(image_urls) >= 1:
@@ -113,6 +133,7 @@ class Article(models.Model):
                     photo.image.save(filename, files.File(tf))
                     self.photos.add(photo)
                     print("  ==> <", filename, "> image saved successfully.\n")
+
 
     def __save_keyphrases(self, text):
         if text and len(text) > 100:
@@ -139,6 +160,14 @@ class Article(models.Model):
         return str(self.title)
 
 
+class RelatedTopic(models.Model):
+    article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name="related_topics", null=True, blank=True)
+    link = models.CharField(max_length=200)
+
+    def __str__(self):
+        return str("Related topic: " + self.link)
+
+
 
 class Keyphrase(models.Model):
 
@@ -156,9 +185,4 @@ class Photo(models.Model):
     article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name="photos", null=True, blank=True)
 
     image = models.ImageField(upload_to="news/static/news/photos/originals/%Y/%m/")
-
-    # title = models.CharField(max_length=100)
-    # image_height = models.IntegerField()
-    # image_width = models.IntegerField()
-    # caption = models.CharField(max_length=250, blank=True)
 

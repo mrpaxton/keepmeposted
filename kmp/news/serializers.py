@@ -4,7 +4,6 @@ from rest_framework.serializers import ModelSerializer, ListSerializer
 from news.models import Article, Keyphrase
 
 
-
 class KeyphraseSerializer(ModelSerializer):
     class Meta:
         model = Keyphrase

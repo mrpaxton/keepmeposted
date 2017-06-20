@@ -1,7 +1,5 @@
+
 from django.shortcuts import render
-
-# Create your views here.
-
 
 from django.views.generic import ListView
 
@@ -14,13 +12,13 @@ from rest_framework.generics import ListAPIView, RetrieveAPIView
 
 from news.serializers import ArticleSerializer, KeyphraseSerializer
 
-MAX_NEWS = 10
+MAX_NEWS = 20
 
 
 class ArticleKeyphrasesAPIView(ListAPIView):
     queryset = Article.objects.prefetch_related("keyphrases")
     serializer_class = ArticleSerializer
-    lookup_field = 'pk'
+    lookup_field = "pk"
 
 
 class ArticleRetrieveAPIView(RetrieveAPIView):
@@ -35,7 +33,7 @@ class TextScoreAPIView(APIView):
 
     def get(self, request, format=None):
         articles = Article.objects.prefetch_related("keyphrases")
-        test_article = articles.filter(id=1910).first()
+        test_article = articles.filter(id=2073).first()
         extracted_texts = [ kp.text for kp in test_article.keyphrases.all() ]
         scores = [ kp.score for kp in test_article.keyphrases.all() ]
         data = {
