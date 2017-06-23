@@ -74,6 +74,9 @@ class Article(models.Model):
             super(Article, self).save(*args, **kwargs)
 
             print("==> Article created. Title: ", self.title[:25] + "...")
+            print("args: ", args)
+            print("kwargs: ", kwargs)
+            print("======")
 
             if self.source == "techcrunch": #do Techcrunch specific logics
 
@@ -161,19 +164,32 @@ class Article(models.Model):
 
 
 class RelatedTopic(models.Model):
-    article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name="related_topics", null=True, blank=True)
+
+    article = models.ForeignKey(
+            Article,
+            on_delete=models.CASCADE,
+            related_name="related_topics",
+            null=True,
+            blank=True
+    )
     link = models.CharField(max_length=200)
 
     def __str__(self):
         return str("Related topic: " + self.link)
 
 
-
 class Keyphrase(models.Model):
 
-    article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name="keyphrases", null=True, blank=True)
+    article = models.ForeignKey(
+            Article,
+            on_delete=models.CASCADE,
+            related_name="keyphrases",
+            null=True,
+            blank=True
+    )
     text = models.CharField( max_length=100, unique=True )
-    score = models.DecimalField(max_digits=10, decimal_places=5, default=Decimal("0.00000"))
+    score = models.DecimalField(max_digits=10, decimal_places=5,
+        default=Decimal("0.00000"))
 
     def __str__(self):
         return str(self.text + ": score: " + str(self.score))
@@ -182,7 +198,15 @@ class Keyphrase(models.Model):
 
 class Photo(models.Model):
 
-    article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name="photos", null=True, blank=True)
-
+    article = models.ForeignKey(
+            Article,
+            on_delete=models.CASCADE,
+            related_name="photos",
+            null=True,
+            blank=True
+    )
     image = models.ImageField(upload_to="news/static/news/photos/originals/%Y/%m/")
+
+    def __str__(self):
+        return str(self.image)
 

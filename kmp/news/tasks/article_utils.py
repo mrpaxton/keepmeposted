@@ -1,4 +1,5 @@
 
+
 from django.conf import settings
 from datetime import datetime
 import requests
@@ -54,6 +55,7 @@ def fetch_articles(source):
 
 # Create a model given deserialized data
 def article_to_model(article, source, category):
+
     a = None
     try:
         a = Article.objects.create(
