@@ -7356,3 +7356,330 @@ Model saved: bloomberg: Waymo Hires a Top Tesla Engineer to Lead Self-Driving Ha
 Fetched at 06/23/2017, 00:30:03
 Model saved: bloomberg: U.S. Halts Beef Imports From Brazil Amid Food-Safety Concern
 ----------------------- 
+Fetched at 06/23/2017, 00:40:06
+Model saved: espn: NBA Draft 2017 Live Coverage - ESPN Draftcast
+----------------------- 
+Fetched at 06/23/2017, 00:40:06
+Model saved: espn: Fultz heads to Philly as Sixers take PG at No. 1
+----------------------- 
+Fetched at 06/23/2017, 00:40:06
+Model saved: espn: Big Baller pick: Lonzo goes 2nd to local Lakers
+----------------------- 
+Fetched at 06/23/2017, 00:40:06
+Model saved: espn: Sources: Bulls' Butler traded to Timberwolves
+----------------------- 
+Fetched at 06/23/2017, 00:40:06
+Model saved: espn: 2017 NBA Draft: Live Coverage
+----------------------- 
+Fetched at 06/23/2017, 00:40:06
+Model saved: espn: NBA draft: Pick-by-pick fantasy basketball reaction
+----------------------- 
+Fetched at 06/23/2017, 00:40:06
+Model saved: espn: The world without Lionel Messi
+----------------------- 
+Fetched at 06/23/2017, 00:40:06
+Model saved: espn: Big Papi has made big league impact in Dominican Republic
+----------------------- 
+Fetched at 06/23/2017, 00:40:06
+Model saved: espn: Pipo, pelota and the lessons of a long-ago life
+----------------------- 
+Fetched at 06/23/2017, 00:40:07
+Model saved: bloomberg: Four GOP Senators Spurn Health Plan Aimed at Unifying Party
+----------------------- 
+Fetched at 06/23/2017, 00:40:07
+Model saved: bloomberg: Target Begins Removing Hampton Creek's Products From Stores
+----------------------- 
+Fetched at 06/23/2017, 00:40:07
+Model saved: bloomberg: Trump Says He Doesn't Have Tapes of Conversations With Comey
+----------------------- 
+Fetched at 06/23/2017, 00:40:07
+Model saved: bloomberg: A Bank Payout Bonanza Is One Step Closer
+----------------------- 
+Fetched at 06/23/2017, 00:40:07
+Model saved: bloomberg: Waymo Hires Ex-Tesla Engineer to Lead Self-Driving Hardware
+----------------------- 
+Fetched at 06/23/2017, 00:40:07
+Model saved: bloomberg: Vancouver Mansion Lists for Record $48 Million
+----------------------- 
+Fetched at 06/23/2017, 00:40:07
+Model saved: bloomberg: Shkreli's Relative Warned Witness Not to Testify, U.S. Says
+----------------------- 
+Fetched at 06/23/2017, 00:40:07
+Model saved: bloomberg: U.S. Halts Beef Imports From Brazil Amid Food-Safety Concern
+----------------------- 
+Fetched at 06/23/2017, 00:40:07
+Model saved: bloomberg: Ivanka Trumps Spas Are Her Last Luxury Brand
+----------------------- 
+Fetched at 06/23/2017, 00:40:07
+Model saved: bloomberg: It Won't Take a Red-Hot Summer to Wipe Out the U.S. Gas Glut
+----------------------- 
+Fetched at 06/23/2017, 00:40:09
+Model saved: techcrunch: Crunch Report
+----------------------- 
+Fetched at 06/23/2017, 00:40:09
+Model saved: techcrunch: Some Uber employees are reportedly petitioning for Travis Kalanick tostay
+----------------------- 
+Fetched at 06/23/2017, 00:40:10
+Model saved: techcrunch: Facebook changes mission statement to bring the world closertogether
+----------------------- 
+Fetched at 06/23/2017, 00:40:11
+Model saved: techcrunch: Waymo filing says ex-Uber CEO Travis Kalanick knew engineer had Googleinfo
+----------------------- 
+Fetched at 06/23/2017, 00:40:12
+Model saved: techcrunch: Kalanick is out, but Ubers VCs royally screwed up, too, say industrywatchers
+----------------------- 
+Fetched at 06/23/2017, 01:31:04
+Model saved: espn: Trade grades: Which team flunked the Jimmy Butler deal?
+----------------------- 
+Fetched at 06/23/2017, 01:31:04
+Model saved: espn: Lonzo dons signature shoes in Lakers colors
+----------------------- 
+Fetched at 06/23/2017, 01:31:04
+Model saved: espn: Embiid, Simmons take shots at Ball family following Lakers' pick
+----------------------- 
+Fetched at 06/23/2017, 01:31:29
+Model saved: bloomberg: Biggest Banks Clear Their First Hurdle in Fed's Stress Tests
+----------------------- 
+Fetched at 06/23/2017, 02:30:09
+Model saved: espn: Timberwolves get Butler in trade with Bulls
+----------------------- 
+Fetched at 06/23/2017, 02:30:09
+Model saved: espn: Fans should remember son Lonzo Ball is no LaVar
+----------------------- 
+Fetched at 06/23/2017, 03:00:11
+Model saved: espn: Butler goes to Wolves in draft-night mega-deal
+----------------------- 
+Fetched at 06/23/2017, 03:00:12
+Model saved: bloomberg: Buffett's Home Capital Deal Kicked Off by 82-Year-Old Banker
+----------------------- 
+Fetched at 06/23/2017, 03:00:12
+Model saved: bloomberg: The $100 Billion City Next to Singapore Has a Big China Problem
+----------------------- 
+Fetched at 06/23/2017, 03:00:13
+Model saved: bloomberg: A Year Later We Still Have No Clue What Brexit Means
+----------------------- 
+Fetched at 06/23/2017, 10:00:02
+Model saved: espn: NBA draft's biggest winners and losers
+----------------------- 
+Fetched at 06/23/2017, 10:00:02
+Model saved: espn: Right now, the Yankees are all Aaron Judge and no jury
+----------------------- 
+Fetched at 06/23/2017, 10:00:02
+Model saved: espn: Real or not? Orioles should trade Manny Machado, Brewers have an ace
+----------------------- 
+Fetched at 06/23/2017, 10:00:02
+Model saved: espn: College World Series field narrows to four teams
+----------------------- 
+Fetched at 06/23/2017, 10:00:03
+Model saved: bloomberg: One Year Later: Voices from Brexits Front Lines
+----------------------- 
+Fetched at 06/23/2017, 10:00:03
+Model saved: bloomberg: Biggest Banks Clear Their First Hurdle in Feds Stress Tests
+----------------------- 
+Fetched at 06/23/2017, 13:00:02
+Model saved: espn: Barcelona's Lionel Messi to pay fine, avoid prison sentence for tax fraud
+----------------------- 
+Fetched at 06/23/2017, 13:00:03
+Model saved: bloomberg: Shut Al-Jazeera, Isolate Iran: 13 Demands on Qatar to End Crisis
+----------------------- 
+Fetched at 06/23/2017, 13:00:03
+Model saved: bloomberg: Hey, Mueller, You Should Check Out Iceland
+----------------------- 
+Fetched at 06/23/2017, 13:00:03
+Model saved: bloomberg: How Killing Obamacare Might Save Obamacare, For a While
+----------------------- 
+Fetched at 06/23/2017, 13:00:03
+Model saved: bloomberg: The Brexit Quiz: One Year On
+----------------------- 
+Fetched at 06/23/2017, 13:00:03
+Model saved: bloomberg: Five Things You Need to Know to Start Your Day
+----------------------- 
+Fetched at 06/23/2017, 17:00:02
+Model saved: espn: The night Lonzo Ball became a Los Angeles Laker
+----------------------- 
+Fetched at 06/23/2017, 17:00:02
+Model saved: espn: NBA draft grades for all 30 teams: Who did best, who did worst?
+----------------------- 
+Fetched at 06/23/2017, 17:00:02
+Model saved: espn: Ranking NBA teams, top to bottom, in draft picks
+----------------------- 
+Fetched at 06/23/2017, 17:00:02
+Model saved: espn: The Bulls Made The Right Decision But The Wrong Trade
+----------------------- 
+Fetched at 06/23/2017, 17:00:02
+Model saved: espn: The Big Papi Fame Index: Who can rival David Ortiz?
+----------------------- 
+Fetched at 06/23/2017, 17:00:02
+Model saved: espn: If the Red Sox retired numbers like the Yankees do ...
+----------------------- 
+Fetched at 06/23/2017, 17:00:02
+Model saved: bloomberg: Stocks Are Ignoring Oil's Bear Market
+----------------------- 
+Fetched at 06/23/2017, 17:00:02
+Model saved: bloomberg: Trump's Tape Blunder Risks Fresh Legal Jeopardy in Russia Probe
+----------------------- 
+Fetched at 06/23/2017, 17:00:02
+Model saved: bloomberg: Google Will Stop Reading Your Emails for Gmail Ads
+----------------------- 
+Fetched at 06/23/2017, 17:00:02
+Model saved: bloomberg: Whirlpool Fridge Started London Tower Fire That Killed 79
+----------------------- 
+Fetched at 06/23/2017, 17:00:02
+Model saved: bloomberg: Short-Seller Nailed Home Capital, Then Got Stung by Buffett
+----------------------- 
+Fetched at 06/23/2017, 17:00:02
+Model saved: bloomberg: Talking About Race at Work Might Not Be the Worst Idea After All
+----------------------- 
+Fetched at 06/23/2017, 19:30:02
+Model saved: espn: Zach Lowe: What was behind the Butler trade, and what each team does now
+----------------------- 
+Fetched at 06/23/2017, 19:30:02
+Model saved: espn: Barnwell: The NFL's top QB deals ... and a little reality
+----------------------- 
+Fetched at 06/23/2017, 19:30:02
+Model saved: bloomberg: Mnuchin to Wed Fiancee With Trudeaus Finance Chief Among Guests
+----------------------- 
+Fetched at 06/23/2017, 19:30:02
+Model saved: bloomberg: Health Insurers Concerned by Dramatic Medicaid Cuts in Bill
+----------------------- 
+Fetched at 06/23/2017, 19:30:02
+Model saved: bloomberg: Those Moderates Are Screwing Up Health-Care Reform
+----------------------- 
+Fetched at 06/23/2017, 19:30:02
+Model saved: bloomberg: The New $422,000 Lamborghini Aventador S Steers Like a Garbage Truck
+----------------------- 
+Fetched at 06/23/2017, 19:30:02
+Model saved: bloomberg: Refrigerator Started London Tower Fire That Killed 79
+----------------------- 
+Fetched at 06/23/2017, 19:30:03
+Model saved: techcrunch: Watch SpaceX launch a re-used Falcon 9 rocket live righthere
+----------------------- 
+Fetched at 06/23/2017, 20:00:02
+Model saved: bloomberg: GOP's Heller Opposes Senate Health Plan in Blow to McConnell
+----------------------- 
+Fetched at 06/23/2017, 20:00:02
+Model saved: bloomberg: Health Stocks Surge, Shrugging Off Uncertainty in Washington
+----------------------- 
+Fetched at 06/23/2017, 20:00:02
+Model saved: bloomberg: SpaceX's Successful Friday Launch Opens Weekend Doubleheader
+----------------------- 
+Fetched at 06/23/2017, 22:00:03
+Model saved: bloomberg: Wal-Mart Said to Steer Clear of Making Rival Bid for Whole Foods
+----------------------- 
+Fetched at 06/23/2017, 22:00:03
+Model saved: bloomberg: Venture Capitalist Goes on Leave After Report He Harassed Women
+----------------------- 
+Fetched at 06/23/2017, 22:00:03
+Model saved: bloomberg: A Second, Even Bigger Foreclosure Reaches NYC Billionaires' Row
+----------------------- 
+Fetched at 06/23/2017, 22:00:03
+Model saved: bloomberg: Jeb Bush Joins Former Rivals to Beat Derek Jeter's Marlins Bid
+----------------------- 
+Fetched at 06/23/2017, 23:00:02
+Model saved: espn: Isaiah Thomas: 'If I were 6-5, I'd be the best player in the world'
+----------------------- 
+Fetched at 06/23/2017, 23:00:02
+Model saved: bloomberg: Saudi Demands of Qatar Test for Tillerson's Gulf Strategy
+----------------------- 
+Fetched at 06/23/2017, 23:29:49
+Model saved: espn: Final 2017 NHL mock draft
+----------------------- 
+Fetched at 06/23/2017, 23:29:49
+Model saved: bloomberg: Venture Capitalist on Leave, Apologizes for Harassing Women
+----------------------- 
+Fetched at 06/23/2017, 23:29:49
+Model saved: bloomberg: SeaWorld Subpoenaed on `Blackfish' Comments in Federal Probe
+----------------------- 
+Fetched at 06/24/2017, 01:00:06
+Model saved: espn: Pick-by-pick analysis of Round 1 of the NHL draft
+----------------------- 
+Fetched at 06/24/2017, 01:00:06
+Model saved: espn: Devils make Hischier top pick; Patrick goes 2nd
+----------------------- 
+Fetched at 06/24/2017, 01:00:06
+Model saved: espn: Washington vs. Minnesota - Game Summary - June 23, 2017 - ESPN
+----------------------- 
+Fetched at 06/24/2017, 01:00:07
+Model saved: bloomberg: Trump Didn't Record Comey, White House Tells House Intel Panel
+----------------------- 
+Fetched at 06/24/2017, 02:00:02
+Model saved: espn: What every NFL starting QB makes now
+----------------------- 
+Fetched at 06/24/2017, 02:00:03
+Model saved: bloomberg: Unilever Grills Tech Giants on Ads, Says Dollars Up for Grabs
+----------------------- 
+Fetched at 06/24/2017, 02:30:02
+Model saved: espn: Ortiz's 34 joins pantheon of Red Sox greats
+----------------------- 
+Fetched at 06/24/2017, 03:30:01
+Model saved: espn: Hischier taken at No. 1; Vegas goes with Glass
+----------------------- 
+Fetched at 06/24/2017, 05:30:02
+Model saved: espn: Saturday rematches will decide lineup for College World Series finals
+----------------------- 
+Fetched at 06/24/2017, 09:00:01
+Model saved: espn: Bryce Harper adds another walk-off to his rsum
+----------------------- 
+Fetched at 06/24/2017, 09:00:02
+Model saved: bloomberg: A Second, Even Bigger Foreclosure Reaches NYC Billionaires Row
+----------------------- 
+Fetched at 06/24/2017, 09:00:02
+Model saved: bloomberg: Saudi Demands of Qatar Test for Tillersons Gulf Strategy
+----------------------- 
+Fetched at 06/24/2017, 09:00:02
+Model saved: bloomberg: Jeb Bush Joins Former Rivals to Beat Derek Jeters Marlins Bid
+----------------------- 
+Fetched at 06/24/2017, 16:00:02
+Model saved: espn: New Zealand vs. Portugal - Football Match Summary - June 24, 2017 - ESPN
+----------------------- 
+Fetched at 06/24/2017, 16:00:02
+Model saved: espn: Avisail Garcia and great seasons you are probably overlooking
+----------------------- 
+Fetched at 06/24/2017, 16:00:02
+Model saved: espn: Ranking MLB defenses: Which teams have an edge?
+----------------------- 
+Fetched at 06/24/2017, 16:00:02
+Model saved: espn: Best Day 2 NHL draft prospects
+----------------------- 
+Fetched at 06/24/2017, 16:00:02
+Model saved: bloomberg: GOP Push for 20-Year Tax Cut Grows as Ryan Seeks Permanent Fix
+----------------------- 
+Fetched at 06/24/2017, 16:00:02
+Model saved: bloomberg: Pence Meets With Charles Koch as Big Donors Convene in Colorado
+----------------------- 
+Fetched at 06/24/2017, 16:00:02
+Model saved: bloomberg: Immigrants Make America Great. So Do Their Grandchildren
+----------------------- 
+Fetched at 06/24/2017, 16:00:03
+Model saved: bloomberg: Saudi-Led Bloc Seeks Diplomatic Fix to Impasse With Qatar
+----------------------- 
+Fetched at 06/24/2017, 16:00:03
+Model saved: bloomberg: Search Here And See If Your Job Is Going To Die
+----------------------- 
+Fetched at 06/24/2017, 16:00:03
+Model saved: bloomberg: Trump and Modi to Seek Personal Rapport, Talk Defense Deals
+----------------------- 
+Fetched at 06/24/2017, 21:00:02
+Model saved: espn: Rise of Silvas Andre and Bernardo can transform Portugal ahead of World Cup
+----------------------- 
+Fetched at 06/24/2017, 21:00:02
+Model saved: bloomberg: Trump Spy Chief Says U.S. Plans to Stop Leaks, Punish Leakers
+----------------------- 
+Fetched at 06/24/2017, 21:00:02
+Model saved: bloomberg: Cyberattack Hits U.K. Parliament, Limits MPs' Email Access
+----------------------- 
+Fetched at 06/24/2017, 21:00:02
+Model saved: bloomberg: Deion Sanders Defends Koch Brothers at Summit
+----------------------- 
+Fetched at 06/24/2017, 21:00:02
+Model saved: bloomberg: Melania Trump Keeps Her D.C. Entry Low-Key
+----------------------- 
+Fetched at 06/24/2017, 21:00:02
+Model saved: bloomberg: Buffett Bullish on Canada But Not as Much on Its Housing: Globe
+----------------------- 
+Fetched at 06/24/2017, 22:30:02
+Model saved: espn: Is Aaron Pico the greatest prospect in MMA history?
+----------------------- 
+Fetched at 06/24/2017, 22:30:02
+Model saved: espn: Bellator NYC Cheat Sheet -- Sonnen vs. Silva
+----------------------- 

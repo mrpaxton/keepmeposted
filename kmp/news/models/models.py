@@ -65,18 +65,12 @@ class Article(models.Model):
     def photo_urls(self):
         return [ "/".join(photo.image.name.split("/")[2:]) for photo in self.photos.all() ]
 
-    def has_keyphrases(self):
-        return self.keyphrases.count() >= 1
-
     def save(self, *args, **kwargs):
         # create an article object
         if not self.pk:
             super(Article, self).save(*args, **kwargs)
 
             print("==> Article created. Title: ", self.title[:25] + "...")
-            print("args: ", args)
-            print("kwargs: ", kwargs)
-            print("======")
 
             if self.source == "techcrunch": #do Techcrunch specific logics
 

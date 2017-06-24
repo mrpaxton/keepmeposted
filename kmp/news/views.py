@@ -1,7 +1,7 @@
 
 from django.shortcuts import render
-
 from django.views.generic import ListView
+from django.db.models import Count
 
 from .models import Article, Category
 
@@ -101,7 +101,8 @@ class TechArticleListView(ListView):
     model = Article
 
     def get_queryset(self):
-        return Article.objects \
+        # Expose num_keyphrases: use an annotate function; passing an aggregate function Count
+        return Article.objects.annotate(num_keyphrases=Count("keyphrases")) \
                 .filter(categories__name__in=[Category.TECH]) \
                 .order_by('-timestamp')[:MAX_NEWS]
 

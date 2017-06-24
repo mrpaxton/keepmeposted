@@ -23,7 +23,7 @@
 							{{ obj.title }}
                             <br/>
                             <input type="hidden" id="article-id" value={{ obj.id }} />
-                            {% if obj.has_keyphrases %}
+                            {% if obj.num_keyphrases >= 1 %}
                                 <i id={{ obj.id }} class="more material-icons right">more_vert</i>
                             {% endif %}
 						</span>
