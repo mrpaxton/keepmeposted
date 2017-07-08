@@ -76,22 +76,22 @@ class Article(models.Model):
 
                 # 1. save related images to the article model, if any
                 tch = TechcrunchHelper(self.url)
-                self.__save_images(tch.all_images())
+                all_images = tch.all_images()
+                self.__save_images(all_images)
 
                 # 2. if text gathered successfully, feed text to Rake, save keyphrases in KP model
                 text = tch.all_text()
                 self.__save_keyphrases(text)
 
-
                 # 3. save related topics retrieved from the related URL slugs by TC
                 #mentioned_topics
-                # print("===> ", tch.mentioned_topics(tch.related_links()))
-                mentioned_topics = tch.mentioned_topics(tch.related_links())
+                related_links = tch.related_links()
+                mentioned_topics = tch.mentioned_topics(related_links)
                 self.__save_related_topics(mentioned_topics)
 
         else: # save an article object
             super(Article, self).save(*args, **kwargs)
-            print("==> Article saved. Title: ", self.title[:25] + "...")
+            print("==> Article saved. Title: ", self.title[:30] + "...")
 
 
     def __text_without_puncs(self, text):

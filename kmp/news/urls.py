@@ -11,7 +11,6 @@ from .views import (
 
     ArticleKeyphrasesAPIView,
     ArticleRetrieveAPIView,
-
     ArticlePhotoAPIView,
 )
 
@@ -22,10 +21,9 @@ urlpatterns = [
     url( r'^sports', SportsArticleListView.as_view(), name="sports-article-list"),
     url( r'^tech', TechArticleListView.as_view(), name="tech-article-list"),
 
-    url(r'^list/$', ArticleKeyphrasesAPIView.as_view(), name="api-article-list"),
+    url(r'^keyphrase-list/$', ArticleKeyphrasesAPIView.as_view(), name="api-article-list"),
     url(r'^(?P<pk>[\d]+)/$', ArticleRetrieveAPIView.as_view(), name="api-article-detail"),
 
     url(r'^article-photo-list/$', ArticlePhotoAPIView.as_view(), name="api-article-photo-list"),
-
 ]
 

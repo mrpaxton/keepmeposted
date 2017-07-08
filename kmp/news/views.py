@@ -10,7 +10,7 @@ from rest_framework.response import Response
 
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 
-from news.serializers import ArticleSerializer, KeyphraseSerializer, ArticlePhotoSerializer
+from news.serializers import ArticleSerializer, KeyphraseSerializer, ArticlePhotoSerializer, ArticleListSerializer
 
 
 MAX_NEWS = 20
@@ -21,12 +21,14 @@ class ArticleKeyphrasesAPIView(ListAPIView):
     serializer_class = ArticleSerializer
     lookup_field = "pk"
 
-
 class ArticlePhotoAPIView(ListAPIView):
     queryset = Article.objects.prefetch_related("photos")
     serializer_class = ArticlePhotoSerializer
     lookup_field = "pk"
 
+class ArticleListAPIView(ListAPIView):
+    queryset = Article.objects.all()
+    serializer_class = ArticleListSerializer
 
 class ArticleRetrieveAPIView(RetrieveAPIView):
     queryset = Article.objects.prefetch_related("keyphrases")
@@ -40,7 +42,7 @@ class TextScoreAPIView(APIView):
 
     def get(self, request, format=None):
         articles = Article.objects.prefetch_related("keyphrases")
-        test_article = articles.filter(id=3009).first()
+        test_article = articles.filter(id=3372).first()
         extracted_texts = [ kp.text for kp in test_article.keyphrases.all() ]
         scores = [ kp.score for kp in test_article.keyphrases.all() ]
         data = {

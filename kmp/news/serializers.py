@@ -13,6 +13,15 @@ class KeyphraseSerializer(ModelSerializer):
             'score',
         )
 
+class ArticleListSerializer(ModelSerializer):
+    class Meta:
+        model = Article
+        fields = (
+            'id',
+            'title',
+            'description',
+            'url',
+        )
 
 class ArticleSerializer(ModelSerializer):
     keyphrases = KeyphraseSerializer(many=True)
