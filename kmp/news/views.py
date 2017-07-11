@@ -3,6 +3,9 @@ from django.shortcuts import render
 from django.views.generic import ListView
 from django.db.models import Count
 
+
+from django.contrib.auth.mixins import LoginRequiredMixin
+
 from .models import Article, Category
 
 from rest_framework.views import APIView
@@ -52,9 +55,10 @@ class TextScoreAPIView(APIView):
         return Response(data)
 
 
-class SportsArticleListView(ListView):
+class SportsArticleListView(LoginRequiredMixin, ListView):
 
     model = Article
+    login_url = "/login"
 
     def get_queryset(self):
         return Article.objects \
@@ -67,9 +71,10 @@ class SportsArticleListView(ListView):
         return context
 
 
-class FinanceArticleListView(ListView):
+class FinanceArticleListView(LoginRequiredMixin, ListView):
 
     model = Article
+    login_url = "/login"
 
     def get_queryset(self):
         return Article.objects \
@@ -97,10 +102,10 @@ class GeneralArticleListView(ListView):
         return context
 
 
-
-class TechArticleListView(ListView):
+class TechArticleListView(LoginRequiredMixin, ListView):
 
     model = Article
+    login_url = "/login"
 
     def get_queryset(self):
         # Expose num_keyphrases: use an annotate function; passing an aggregate function Count

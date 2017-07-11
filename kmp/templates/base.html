@@ -18,22 +18,31 @@
             <i class="material-icons">menu</i></a>
 
 		<ul class="right hide-on-med-and-down">
+            <li><a href={% url "news:general-article-list" %}>General</a></li>
             <li><a href={% url "news:sports-article-list" %}>Sports</a></li>
             <li><a href={% url "news:finance-article-list" %}>Finance</a></li>
-            <li><a href={% url "news:general-article-list" %}>General</a></li>
             <li><a href={% url "news:tech-article-list" %}>Technology</a></li>
+
+            <li class="cyan"><a href={% url "signup" %}>
+                    <span class="white-text">Sign Up</span></a></li>
+            <li class="cyan"><a href={% url "login" %}>
+                    <span class="white-text">Login</span></a></li>
+            <li class="cyan"><a href={% url "logout" %}>
+                    <span class="white-text">Logout</span></a></li>
 		</ul>
 
 		<ul class="side-nav" id="mobile-demo" >
-            <li><a href={% url "news:finance-article-list" %}>
-                    <span class="light-blue-text">Finance</span></a></li>
             <li><a href={% url "news:general-article-list" %}>
                     <span class="light-blue-text">General</span></a></li>
+            <li><a href={% url "news:finance-article-list" %}>
+                    <span class="light-blue-text">Finance</span></a></li>
             <li><a href={% url "news:sports-article-list" %}>
                     <span class="light-blue-text">Sports</span></a></li>
             <li><a href={% url "news:tech-article-list" %}>
                     <span class="light-blue-text">Tech</span></a></li>
+
 		</ul>
+
 
 	</div>
 </nav>

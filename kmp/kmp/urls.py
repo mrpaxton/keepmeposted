@@ -12,9 +12,16 @@ from news.views import (
     ArticlePhotoAPIView,
 )
 
+from accounts.views import login_view, logout_view, signup_view
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^articles/', include("news.urls", namespace="news")),
+
+    # authentication
+    url(r'^login/', login_view, name="login"),
+    url(r'^logout/', logout_view, name="logout"),
+    url(r'^signup/', signup_view, name="signup"),
 
     # expose API endpoints for visualization purposes
     url(r'^api/textscores/data/', TextScoreAPIView.as_view()),
