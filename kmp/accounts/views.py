@@ -18,24 +18,29 @@ from .forms import UserLoginForm, UserSignupForm
 
 def login_view(request):
 
+    print("user.is_authenticated(): ", request.user.is_authenticated() )
+    if request.user.is_authenticated():
+        return redirect(reverse("news:tech-article-list"))
+
     next = request.GET.get("next")
     title = "Login"
     credential = "Try username: Foo, password: Burrito, or sign up a new user"
     form = UserLoginForm(request.POST or None)
+
     if form.is_valid():
         username = form.cleaned_data.get("username")
         password = form.cleaned_data.get("password")
         user = authenticate(username=username, password=password)
         login(request, user)
 
+
         if next:
             return redirect(next)
 
-        #todo: try to use reverse()
         return redirect(reverse("news:tech-article-list"))
 
-
-    return render(request, "form.html", {"form": form, "title": title, "credential": credential})
+    context = {"form": form, "title": title, "credential": credential}
+    return render(request, "form.html", context )
 
 
 def logout_view(request):
@@ -65,7 +70,8 @@ def signup_view(request):
 
     context = {
         "form": form,
-        "title": title
+        "title": title,
+        "is_signup_form": True
     }
 
-    return render(request, "form.html", context)
+    return render(request, "signup_form.html", context)

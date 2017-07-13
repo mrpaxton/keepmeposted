@@ -1,0 +1,32 @@
+
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+
+
+    <div class="col s12 m7 l10 offset-l1">
+
+        <h4>Get Latest News with Extracted Images and Relevant Key Phrases</h4>
+        {% load static %}
+        <div class="card cyan darken-4 l6 m4 s3 row">
+            <div class="card-image center white-text">
+                <br/>
+                <h3>News Headline and Summary</h3>
+                <img src="{% static "news/demo-image-one.png" %}" />
+                <h3>View Images and Relevant Info Inside the Article</h3>
+                <img src="{% static "news/demo-image-two.png" %}" />
+                <h3>Visualization of Key Phrases</h3>
+                <img src="{% static "news/demo-image-three.png" %}" />
+            </div>
+        </div>
+        <br/>
+
+
+    </div>
+
+</div>
+
+{% endblock content %}

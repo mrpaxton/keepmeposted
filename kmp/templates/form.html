@@ -6,7 +6,7 @@
 
 <div class="container layout-padding flex">
     <div class="row">
-        <div class="white card col l6 m6 s6 offset-l3">
+        <div class="white card col l6 m6 s10 offset-l3">
 
             <h5>{{ title }}</h5>
 
@@ -14,12 +14,17 @@
                 <p>{{ credential }}</p>
             {% endif %}
 
+
             <hr/>
 
             <form method="POST" action="" enctype="multipart/form-data">{% csrf_token %}
                 {{ form }}
                 <input type="submit" class="btn btn-default" value="{{ title }}" />
             </form>
+
+            {% if is_signup_form %}
+                <p>Have an account? <a href="/login">Log in</a></p>
+            {% endif %}
 
         </div>
     </div>

@@ -40,6 +40,7 @@ class ArticleRetrieveAPIView(RetrieveAPIView):
 
 
 class TextScoreAPIView(APIView):
+
     authentication_classes = []
     permission_classes = []
 

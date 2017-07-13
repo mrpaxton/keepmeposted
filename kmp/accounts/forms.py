@@ -51,6 +51,7 @@ class UserSignupForm(forms.ModelForm):
             "password"
         ]
 
+    #field level validation
     def clean_email2(self):
         email = self.cleaned_data.get("email")
         email2 = self.cleaned_data.get("email2")

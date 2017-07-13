@@ -19,7 +19,7 @@ urlpatterns = [
     url(r'^articles/', include("news.urls", namespace="news")),
 
     # authentication
-    url(r'^login/', login_view, name="login"),
+    url(r'^$|login/', login_view, name="login"),
     url(r'^logout/', logout_view, name="logout"),
     url(r'^signup/', signup_view, name="signup"),
 
